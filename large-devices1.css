@@ -307,14 +307,14 @@ a {
 */
 
 .signin-module {
+
   border-radius: 3rem;
   width: 20%;
   box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
   text-align: center;
-
   flex: 75%;
   padding: 20px;
-  margin-left: auto;
+margin-left: 40%;
 }
 
 
@@ -355,11 +355,11 @@ a {
 
 .home-info-module {
   border-radius: 3rem;
-  width: 74%;
-  height: auto;
+  width: 99%;
+  height: 49vh;
   box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
   text-align: center;
-  padding: 20px;
+  padding: 8px;
 }
 
 
@@ -380,7 +380,7 @@ a {
   width: 800px;
   box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
   text-align: center;
-  flex: 75%;
+  flex: 50%;
   padding: 50px;
   margin: 2% auto;
 }

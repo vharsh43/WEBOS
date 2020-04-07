@@ -5,6 +5,6 @@
 	session_destroy();
 	
 	// redirect the user back to the login page
-	header("Location: homepage.php");
+	header("Location: login.php");
 	exit();
 ?>

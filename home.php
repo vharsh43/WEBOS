@@ -3,7 +3,7 @@
 
 
 	if (!isset($_SESSION["user_id"])) {
-    header("Location: homepage.php");
+    header("Location: login.php");
 
 		exit();
 	} else {
@@ -11,9 +11,6 @@
 
     $username = $_SESSION["username"];
     
-    //If somebody is logged in, display a welcome message
-		echo "Welcome, logged in as:  " .$_SESSION['username']. "<br />" ;	
-		
 		// load the database and get the orders for this user
 		$db = new mysqli("localhost", "hbv559", "Gj53185", "hbv559");
 	  	if ($db->connect_error) {
@@ -38,27 +35,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Conference Portal</title>
+    <title>WEB OS</title>
 		
-		<link rel="shortcut icon" href="icon.png" type="x-icon">
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 		
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+                <script type="text/javascript" src="validate.js"></script>
+
                 <link rel="stylesheet" type="text/css" media="screen and (min-width: 581px)" href="large-devices1.css" />
 </head>
 
+
+<style>
+
+    .err_msg{ color:#c20101;
+      text-decoration:underline;
+    }
+  
+    </style>
 
 <body>   
 <header>
    
     <div class="companyheader">
         <div class="ch1">
-            <a href="homepage.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
+            <a href="home.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
 
         </div>
         <div class="ch2">
-            <h1> <a href="homepage.php"> CONFERENCE PORTAL</a></h1> 
+            <h1> <a href="home.php"> WEB OS</a></h1> 
 
         </div>
         <div    class="ch4">

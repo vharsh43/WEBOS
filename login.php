@@ -15,7 +15,6 @@
         echo '<a href="logout.php">Sign Out</a>   <br/>'  ;	
 
 
-
 		// load the database and get the orders for this user
 		$db = new mysqli("localhost", "hbv559", "Gj53185", "hbv559");
 	  	if ($db->connect_error) {
@@ -92,11 +91,10 @@
 
 
 <style>
+
     .err_msg{ color:#c20101;
       text-decoration:underline;
-  
     }
-  
   
     </style>
 
@@ -125,12 +123,8 @@
 
 </header>
 
-<hr>
-
-
 <br>
 <div>
-
 <img src="web_os.png" id="home-main-image">
 </div>
 <hr>
@@ -145,7 +139,7 @@
 
 <h3>Login</h3>
 <p class="error"><?=$error?></p>
-		<form action="homepage.php" method="post">
+		<form action="login.php" method="post">
 			<input type="hidden" name="submitted" value="1" />
 			<p><label>
 				Username
