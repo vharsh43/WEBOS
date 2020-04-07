@@ -78,7 +78,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Conference Portal</title>
+    <title>WEB OS</title>
 		
 		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 		
@@ -105,11 +105,11 @@
    
     <div class="companyheader">
         <div class="ch1">
-            <a href="homepage.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
+            <a href="home.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
 
         </div>
         <div class="ch2">
-            <h1> <a href="homepage.php"> CONFERENCE PORTAL</a></h1> 
+            <h1> <a href="homepage.php"> WEB OS</a></h1> 
 
         </div>
         <div    class="ch4">
@@ -130,15 +130,6 @@
 <hr>
 
 
-<div class="topnav">
-                <a href="homepage.php">Home Page</a>
-         
-          <a href="management.php">Room Management</a>
-       <div class="topnav-right">
-        
-       </div>
-       
-              </div>
 <br>
 <div>
 
@@ -147,17 +138,6 @@
 <hr>
 
 <section class="home-info-module">
-<h2 >About </h2>
-<article>
-<p> 
-    All meeting rooms will be booked on a first come first serve basis,<br>
-    With priority given to government authoritties.
-    <br><br>
-    We offer more than 2 reported conference listings, including all facilities, equipments, and other unique accessories for Business meetings.
-    <br>Wherever you want to book, We make it easy and supports you with 24/7 customer support.
-</p>
-</article>
-</section>
 
 
 <div class="signin-module">
@@ -209,59 +189,6 @@
 
 
 
-
-<section class="home-room-avilable-module"> 
-    <div class="home-room-avilable-top">         
-           <h2>RIC 214</h2>
-    <img src="room1.png" id="home-room-image">
-    <br>
-    <br>
-
-    <div class="home-room-avilable-bottom">
-        <div class="home-room-avilable-3">
-            <p2><b>Avilable</b></p2>
-            <br><br>
-            <p3>Yes</p3>
-     </div>
-     <div class="home-room-avilable-3">
-            <p2>Booked By</p2>
-            <br><br>
-
-            <img src="male.png" id="user-image">
-        </div>
-     <div class="home-room-avilable-3">
-        <p2><b>Book Now</b></p2>
-        <br><br>
-        <p3><a href="booking.php">+ Reserve</a></p3>     </div>
-    </div>
-
-    </div>
-<div class="home-room-avilable-top">
-         <h2>RIC 315</h2>
-  <img src="room2.png" id="home-room-image">
-  <br>
-    <br>
-
-
-  <div class="home-room-avilable-bottom">
-            <div class="home-room-avilable-3">
-                <p2><b>Avilable</b></p2>
-                <br><br>
-                <p3>No</p3>
-            </div>
-         <div class="home-room-avilable-3">
-                <p2>Booked By</p2>
-                <br><br>
-
-                <img src="harsh.png" id="user-image">
-            </div>
-         <div class="home-room-avilable-3">
-            <p2><b>Book Now</b></p2>
-            <br><br>
-            <p3><a href="booking.php">+ Reserve</a></p3>  
-        </div>
-        </div>
-</div>
 <br>
 <br>
 
