@@ -55,7 +55,7 @@
 		  		session_start();
 				$_SESSION["user_id"] = $row["user_id"];
 				$_SESSION["username"] = $row["username"];
-				header("Location: homepage.php");
+				header("Location: home.php");
 				$db->close();
 				exit();
 			} else {
@@ -109,16 +109,14 @@
 
         </div>
         <div class="ch2">
-            <h1> <a href="homepage.php"> WEB OS</a></h1> 
+            <h1> <a href="home.php"> WEB OS</a></h1> 
 
         </div>
         <div    class="ch4">
            <div class="ch4-1">
-          <!-- <img src="<?php echo $photo; ?>" width = "50px" height = "50px" > -->
             
            </div>
             <div class="ch4-2">
-          <!--  <h3> <?php echo $usrname; ?></h3>   -->
                 </div>
         
         </div>
@@ -133,7 +131,7 @@
 <br>
 <div>
 
-<img src="conference_room.png" id="home-main-image">
+<img src="web_os.png" id="home-main-image">
 </div>
 <hr>
 
@@ -202,7 +200,7 @@
       
 
 <footer>
-        <p>© 2020 All rights reserved. | VHARSH43</p>
+        <p>© 2020 All rights reserved. | HARSH - SAHIL (University of Regina)</p>
         </footer>
 </body>
 
