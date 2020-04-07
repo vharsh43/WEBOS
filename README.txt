@@ -44,6 +44,7 @@ Challenges -
    
    
 Description to reporduce project - 
+Cloud computing has been seen as one of the technology that give rise to the next-generation computing revolution and rapidly becomes the trending point in the ﬁeld of IT (Information Technology).
 
    
    
