@@ -87,7 +87,7 @@
 
 
 <div class="topnav">
-                <a href="homepage.php">Home Page</a>
+                <a href="home.php">Home Page</a>
         
 
           <div class="topnav-right">
@@ -108,72 +108,7 @@
 <div class="mgmt-table-container">
     <h2 style="text-align: center;">Rooms Booked</h2>
     
-    <table class="mgmt-table-all mgmt-hoverable">
-        
-      <thead>
-          <tr>
-                <th> </th>
-                <th> </th>
-                <th> </th>
-                <th> </th>
-                <th> </th>
-                <th> </th>
-                <th> </th>
-              
-          </tr>
-        <tr class="mgmt-light-grey">
-          <th>Room Number</th>
-          <th>Booking ID</th>
-          <th>Date</th>
-          <th>Start</th>
-          <th>End</th>
-          <th>Note</th>
-          <th> Edit / Delete Booking</th>
-          <th>Notes</th>
-          </thead>
-          </tr>
-
- 
-  
-  
-  <?php  	
-
-
- $connection = mysqli_connect ("localhost", "hbv559", "Gj53185", "hbv559");
-    
-  $db = mysqli_select_db($connection,'hbv559');
-
-   // echo "1",$id,"2",$_SESSION['user_id'];
-
-  $query = "SELECT room_no,b.booking_id,date,stime,etime,note FROM bookroom b JOIN rooms r ON b.room_id = r.room_id JOIN notes n ON b.booking_id = n.booking_id WHERE b.user_id =$id";
-  $query_run = mysqli_query($connection,$query);
-
-  while($row = mysqli_fetch_array($query_run))
-  {
-    ?>
-
-<tr>
-                <th>  <?echo $row['room_no'] ?></th>
-                <th>  <?echo $row['booking_id'] ?></th>
-                <th>  <?echo $row['date'] ?></th>
-                <th>  <?echo $row['stime'] ?></th>
-                <th>  <?echo $row['etime'] ?></th>
-                <th>  <?echo $row['note'] ?> </th>
-
-                
-                <th> <a href="http://www2.cs.uregina.ca/~hbv559/assign5/booking.php?booking_id=<?echo $row['booking_id'] ?> " style="text-decoration:none; color: red; font-size: 20px;">Make Changes</a></th>
-                <th><a href="http://www2.cs.uregina.ca/~hbv559/assign5/note.php?booking_id=<?echo $row['booking_id'] ?>" style="color:red;font-size: 20px;">Edit/Delete</a></th>
-                
-</tr>
-
-                <?php
-
-  }
-?>
-
-    </table>
-
-  </div>
+</div>
 
 </div>
 
