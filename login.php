@@ -5,7 +5,7 @@
 
     if (!isset($_SESSION["user_id"])) 
     {
-        echo " Please login to get Full access !!   &nbsp &nbsp" ;
+        echo " <p align=center>Please login to get Full access !! </p> " ;
        // echo '<script>alert("Please login to get Full access !! ")</script>';
     } 
     
@@ -105,7 +105,7 @@
    
     <div class="companyheader">
         <div class="ch1">
-            <a href="home.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
+            <img src="logoo.png" alt="logo" height="60px" width="max">   
 
         </div>
         <div class="ch2">

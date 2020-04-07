@@ -353,65 +353,15 @@ a {
         Room module
 */
 
-.home-room-avilable-module {
-  border-radius: 3rem;
-  width: 97%;
-  height: auto;
-  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
-  text-align: center;
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
-}
-
-.home-room-avilable-top {
-  border-radius: 3rem;
-  width: 30%;
-  height: 90vh;
-  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
-  text-align: center;
-  padding: 20px;
-}
-
-.home-room-avilable-bottom {
-  border-radius: 3rem;
-  width: 92%;
-  height: auto;
-  background: linear-gradient(45deg, rgba(15, 59, 77, 0.432), rgba(114, 73, 216, 0.521), rgba(93, 80, 143, 0.377), rgba(86, 151, 133, 0.377));
-  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-room-avilable-3 {
-  border-radius: 3rem;
-  width: 20%;
-  height: auto;
-  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
-  text-align: center;
-  padding: 20px;
-}
-
 .home-info-module {
   border-radius: 3rem;
   width: 74%;
-  height: 49vh;
+  height: auto;
   box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
   text-align: center;
   padding: 20px;
 }
 
-.home-info-extra-module {
-  border-radius: 3rem;
-  width: 97%;
-  height: auto;
-  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
-  text-align: center;
-  flex: 75%;
-  padding: 20px;
-}
 
 
 
