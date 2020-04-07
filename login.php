@@ -1,19 +1,17 @@
 <?php
     
 
-    
     session_start();
 
     if (!isset($_SESSION["user_id"])) 
     {
         echo " Please login to get Full access !!   &nbsp &nbsp" ;
        // echo '<script>alert("Please login to get Full access !! ")</script>';
-
     } 
     
     else{
         $username = $_SESSION["username"];
-                    echo "Welcome, logged in as:  " .$_SESSION['username']. "&nbsp &nbsp" ;	
+         echo "Welcome, logged in as:  " .$_SESSION['username']. "&nbsp &nbsp" ;	
         echo '<a href="logout.php">Sign Out</a>   <br/>'  ;	
 
 
@@ -21,7 +19,8 @@
 		// load the database and get the orders for this user
 		$db = new mysqli("localhost", "hbv559", "Gj53185", "hbv559");
 	  	if ($db->connect_error) {
-	  		die ("Connection failed: " . $db->connect_error);
+	    die ("Connection failed: " . $db->connect_error);
+    
     }
 
     $q1 = "SELECT * FROM user WHERE username = '$username'";
@@ -56,7 +55,7 @@
 		  		session_start();
 				$_SESSION["user_id"] = $row["user_id"];
 				$_SESSION["username"] = $row["username"];
-				header("Location: management.php");
+				header("Location: homepage.php");
 				$db->close();
 				exit();
 			} else {
