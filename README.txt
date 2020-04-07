@@ -16,5 +16,7 @@ Challenges -
 1) There was a one challanging thing regarding desktop that to show to user all apps and configuration that looks like desktop which was    one of the major challanging task for the us.   
 2) Security issues is also an challanging task as every company has it own privacy and security. we are not able to see the exact          location where your data is stored or being processed. This will increase the cloud computing risks that can arise at the time of        the implementation or management of the cloud.
 3) Lack of resources or expertise as there are more workloads in the cloud because of this reason any of the organization are having        issue with the tools or application.
-4) Complaince is one the challanging issue facing in cloud computing. This issue is related backup services or cloud storage. Every        organization moves data from the internal storage to a cloud every time, it is faced with being compliant with industry regulations      and laws.
-
+4) Complaince is one the challanging issue facing in cloud computing. This issue is related backup services or cloud storage. Every        organization moves data from the internal storage to a cloud every time, it is faced with being compliant with industry regulations      and laws. Cloud cutomers have to look for the vendor that provide complaince which will help customer's company a lot.
+5) Managing multiple clouds is also challanging issue facing in the cloud computing.
+6) To build a private cloud is not the priority for every company as private solutions should be carefully addressed.
+7) We think that one of the major issue is about migration which is faced computing industry. This process works when we move              application to cloud. There are few challanges we faced when we store data in the cloud are security challange, troubleshooting,       downtime for the application and many more.
