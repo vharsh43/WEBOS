@@ -1,0 +1,241 @@
+/*************************************************************/
+                 CREATE TABLE
+/*************************************************************/
+___________________________________________________________________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+CREATE TABLE user ( 
+
+							user_id INT NOT NULL AUTO_INCREMENT,
+							username varchar (30) NOT NULL, 
+							email varchar (40) NOT NULL, 
+							avatar varchar (60), 
+							password varchar (15) NOT NULL, 
+							PRIMARY KEY (user_id) 
+
+				  );
+
+CREATE TABLE user (user_id INT NOT NULL AUTO_INCREMENT, username varchar (30) NOT NULL, email varchar (40) NOT NULL, avatar varchar (60), password varchar (15) NOT NULL, PRIMARY KEY (user_id) );
+
+
+CREATE TABLE bookroom ( 
+							booking_id INT NOT NULL AUTO_INCREMENT,
+							room_id INT,
+							user_id INT NOT NULL, 
+							date DATE NOT NULL, 
+							stime TIME, 
+							etime TIME,
+							last_update varchar(30), 
+							PRIMARY KEY (booking_id), 
+							FOREIGN KEY (user_id) REFERENCES user (user_id),
+							FOREIGN KEY (room_id) REFERENCES rooms (room_id)
+
+
+					);
+
+CREATE TABLE bookroom ( booking_id INT NOT NULL AUTO_INCREMENT, room_id INT, user_id INT NOT NULL, date DATE NOT NULL, stime TIME, etime TIME,last_update varchar(30), PRIMARY KEY (booking_id), FOREIGN KEY (user_id) REFERENCES user (user_id),FOREIGN KEY (room_id) REFERENCES rooms (room_id) );
+
+CREATE TABLE notes ( 
+							note_id INT NOT NULL AUTO_INCREMENT, 
+							booking_id INT NOT NULL, 
+							note varchar(500) NOT NULL,
+							last_update varchar(30), 
+							PRIMARY KEY (note_id), 
+							FOREIGN KEY (booking_id) REFERENCES bookroom (booking_id) 
+
+					);
+
+CREATE TABLE notes (note_id INT NOT NULL AUTO_INCREMENT, booking_id INT NOT NULL, note varchar(500) NOT NULL,last_update varchar(30), PRIMARY KEY (note_id), FOREIGN KEY (booking_id) REFERENCES bookroom (booking_id) );				   
+
+
+CREATE TABLE rooms ( 
+							room_id INT NOT NULL AUTO_INCREMENT, 
+							building varchar(15) NOT NULL, 
+							room_no varchar(15) NOT NULL,
+							capacity INT NOT NULL, 
+							PRIMARY KEY (room_id)
+
+				   );
+
+
+CREATE TABLE rooms ( room_id INT NOT NULL AUTO_INCREMENT, building varchar(15) NOT NULL, room_no varchar(15) NOT NULL,capacity INT NOT NULL, PRIMARY KEY (room_id));
+
+
+/*************************************************************/
+                 INSERT VALUES
+/*************************************************************/
+___________________________________________________________________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+insert into user (username, email, avatar, password) values ('vharsh43','vharsh43@gmail.com', 'https://www.photos.com/male.png', 'Harsh@123');
+
+insert into user (username, email, avatar, password) values ('Bharat','bharatpatel134@gmail.com', 'https://www.photos.com/male.png', 'BHarat@2133');
+
+insert into user (username, email, avatar, password) values ('Ankit','ankit890patel@gmail.com', 'https://www.photos.com/male.png', 'Ankitk*$3');
+
+insert into user (username, email, avatar, password) values ('Preksha','preksha345asdiya@gmail.com', 'https://www.photos.com/female.png', 'Life3!vik');
+
+insert into user (username, email, avatar, password) values ('Kriva','kriva8768@gmail.com', 'https://www.photos.com/female.png', 'Kriva!232!usa');
+
+insert into user (username, email, avatar, password) values ('Vidhan','vidhankumar342@gmail.com', 'https://www.photos.com/male.png', 'Vidhan987@@!');
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','5','2020-4-01', '04:12:20','07:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','3','2020-4-02', '06:16:10','10:13:40', '2020-4-01 02:22:33');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('3','1','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('4','1','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('3','5','2020-4-01', '04:12:20','07:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','1','2020-4-02', '06:16:10','10:13:40', '2020-4-01 02:22:33');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','4','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','1','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('3','5','2020-4-01', '04:12:20','07:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','3','2020-4-02', '06:16:10','10:13:40', '2020-4-01 02:22:33');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','4','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('5','5','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','5','2020-4-01', '04:12:20','07:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','3','2020-4-02', '06:16:10','10:13:40', '2020-4-01 02:22:33');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('4','4','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','1','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','4','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','5','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('3','5','2020-4-01', '04:12:20','07:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','1','2020-4-02', '06:16:10','10:13:40', '2020-4-01 02:22:33');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','4','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('5','5','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('2','1','2020-4-01', '04:12:20','07:23:41', '2020-4-01 01:12:23');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','1','2020-4-02', '06:16:10','10:13:40', '2020-4-01 02:22:33');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('4','1','2020-4-03', '08:14:30','11:23:30', '2020-4-01 02:15:53');
+
+insert into bookroom (room_id, user_id, date, stime, etime,last_update) values ('1','1','2020-4-04', '06:12:20','09:23:41', '2020-4-01 01:12:23');
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+insert into notes (booking_id, note, last_update) values ('1', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('2', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('3', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('4', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('5', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('6', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('7', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('8', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('9', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('10', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('11', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('12', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('13', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('14', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('15', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('16', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('17', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('18', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('19', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('20', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('21', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('22', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('23', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('24', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('25', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('26', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('27', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('28', 'Required coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('29', 'Required 2 extra coffee machine and some French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('30', 'Required 4 extra French Vanilla pods for meeting','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('31', 'Required 1 extra coffee mugs','2020-4-01 01:12:23');
+
+insert into notes (booking_id, note, last_update) values ('32', 'Required coffee mugs','2020-4-01 01:12:23');
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+insert into rooms (building,room_no,capacity) values ('R.I.C','315','420');
+
+insert into rooms (building,room_no,capacity) values ('Wascana','410','190');
+
+insert into rooms (building,room_no,capacity) values ('Riddle','110','150');
+
+insert into rooms (building,room_no,capacity) values ('Library','216','435');
+
+insert into rooms (building,room_no,capacity) values ('Kinesology','109','120');
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+/*************************************************************/
+                 VIEW ALL TABLES
+/*************************************************************/
+
+
+SELECT * from users;
+
+SELECT * from bookroom;
+
+SELECT * from rooms;
+
+SELECT * from notes;
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+SELECT room_no,b.booking_id,date,stime,etime,note FROM bookroom b JOIN rooms r ON b.room_id = r.room_id JOIN notes n ON b.booking_id = n.booking_id WHERE b.user_id ='5' ; 
+
+
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+

@@ -1,0 +1,644 @@
+/*****************************************
+                Imported Fonts
+******************************************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap');
+
+
+/*****************************************
+                  Body
+******************************************/
+
+
+body {
+  background: linear-gradient(45deg, rgb(19, 73, 95), rgb(118, 75, 226), rgb(131, 115, 198), rgb(119, 211, 185));
+  background-attachment: relative;
+  color: white;
+}
+
+
+/*****************************************
+            General CSS Layout
+******************************************/
+
+/**
+          Header
+**/
+
+header {
+  
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 8px;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  
+  clear: both;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 200;
+  
+}
+
+
+.companyheader {
+  display: flex;
+  justify-content: space-between;
+  height: 6.5vh;
+  align-items: center;
+}
+
+.ch3 {
+  width: 200px;
+  text-align: center;
+}
+
+.ch4 {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ch4-1 {
+  width: 65px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ch4-2 {
+  width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ch3 :hover {
+  background-color: whitesmoke;
+  padding: 10px 10px;
+}
+
+/**
+          Section Modules
+**/
+
+
+section {
+
+  border: 1px solid grey;
+margin: 5px;
+margin-bottom: 15px;
+padding: 8px;
+background-color: rgba(255, 255, 255, 0.103);
+width: auto;
+height: auto;
+border-radius: 0.5rem;
+box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+
+background-color: rgba(0, 0, 0, 0.5);
+float: left;
+width: 60%;
+color: white;
+border-radius: 3rem;
+width: auto;
+height: auto;
+box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+}
+
+article {
+
+  border: 1px solid grey;
+margin: 5px;
+margin-bottom: 15px;
+padding: 8px;
+background-color: rgba(255, 255, 255, 0.103);
+width: auto;
+height: auto;
+border-radius: 0.5rem;
+box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+
+
+}
+
+
+aside {
+
+  border: 1px solid grey;
+margin: 5px;
+margin-bottom: 15px;
+padding: 8px;
+background-color: rgba(255, 255, 255, 0.103);
+width: auto;
+height: auto;
+border-radius: 0.5rem;
+box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+
+background-color: rgba(0, 0, 0, 0.5);
+margin-left: 62.5%;
+width: 35.7%;
+border-radius: 0.5rem;
+box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+}
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+/**
+          Footer
+**/
+
+
+footer {
+
+  border: 1px solid grey;
+  margin: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.103);
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  
+  clear: both;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  position: relative;
+  font-family: "Montserrat";
+  
+  float: bottom;
+}
+
+  
+  
+/**
+          Font Settings
+**/
+
+
+
+h1{
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+h2{
+font-size: large;
+font-family: "Montserrat";
+font-weight: 500;
+}
+h3{
+font-size: medium;
+font-family: "Montserrat";
+font-weight: 400;
+
+}
+
+
+
+p1{
+font-size: medium;
+font-family: "Montserrat";
+font-weight: 400;
+}
+p2{
+font-size: medium;
+font-family: "Montserrat";
+font-weight: 300;
+}
+
+p3{
+font-size: medium;
+font-family: "Montserrat";
+font-weight: 200;
+}
+
+
+
+.err_msg{ color:#c20101;
+
+  text-decoration:underline;
+  
+    }
+  
+  
+
+
+/**
+          Anchor Tag
+**/
+
+
+a {
+  font-family: "Montserrat";
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  }
+  
+  a:hover {
+  color: black;
+  }
+  
+
+
+  
+
+
+/*****************************************
+                Navigation Bar
+******************************************/
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.103);
+  font: "Montserrat";
+  position: relative;
+  top: 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+  background: #ddd;
+  color: black;
+  text-shadow: "firebrick";
+}
+
+.topnav-right {
+  float: right;
+}
+
+.user{
+  color: #4CAF50;
+}
+/*****************************************
+        Page 1 : Homepage.html
+******************************************/
+
+/*
+    Sign-in Box
+*/
+
+.signin-module {
+  border-radius: 3rem;
+  width: 20%;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+
+  flex: 75%;
+  padding: 20px;
+  margin-left: auto;
+}
+
+
+/*
+            Images
+*/
+
+#logo {
+  height: 60px;
+  width: auto;
+}
+
+#home-main-image {
+  width: 100%;
+  height: 480px;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+}
+
+#home-room-image {
+  width: 100%;
+  height: 60%;
+  opacity: 0.95;
+  border-radius: 0.5rem;
+}
+
+#user-image {
+  width: 50px;
+  height: 50px;
+  opacity: 0.95;
+  border-radius: 0.5rem;
+}
+
+
+/*
+        Room module
+*/
+
+.home-room-avilable-module {
+  border-radius: 3rem;
+  width: 97%;
+  height: auto;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.home-room-avilable-top {
+  border-radius: 3rem;
+  width: 30%;
+  height: 90vh;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  padding: 20px;
+}
+
+.home-room-avilable-bottom {
+  border-radius: 3rem;
+  width: 92%;
+  height: auto;
+  background: linear-gradient(45deg, rgba(15, 59, 77, 0.432), rgba(114, 73, 216, 0.521), rgba(93, 80, 143, 0.377), rgba(86, 151, 133, 0.377));
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-room-avilable-3 {
+  border-radius: 3rem;
+  width: 20%;
+  height: auto;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  padding: 20px;
+}
+
+.home-info-module {
+  border-radius: 3rem;
+  width: 74%;
+  height: 49vh;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  padding: 20px;
+}
+
+.home-info-extra-module {
+  border-radius: 3rem;
+  width: 97%;
+  height: auto;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  flex: 75%;
+  padding: 20px;
+}
+
+
+
+/*****************************************
+            Signup Page
+******************************************/
+
+
+/*
+        Signup module
+*/
+
+
+.signup-module {
+  border-radius: 4rem;
+  width: 800px;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  flex: 75%;
+  padding: 50px;
+  margin: 2% auto;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+
+/*****************************************
+            Room Management Page
+******************************************/
+
+.mgmt-table-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  color: white;
+  border-radius: 3rem;
+  width: 100%;
+  height: 60vh;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  display: flex;
+  justify-content: space-between;
+}
+
+.mgmt-table-inside {
+  border: 1px solid grey;
+  margin: 25px;
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.103);
+  width: 95%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+}
+
+.mgmt-table-container {
+  padding: 0.01em 16px;
+}
+
+.mgmt-table-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border-bottom: 1px;
+  text-align: center;
+}
+
+.mgmt-hoverable tbody tr:hover {
+  background: linear-gradient(45deg, rgba(15, 59, 77, 0.432), rgba(114, 73, 216, 0.521), rgba(93, 80, 143, 0.377), rgba(86, 151, 133, 0.377));
+}
+
+.mgmt-light-grey,.mgmt-hover-light-grey:hover,.mgmt-light-gray,.mgmt-hover-light-gray:hover {
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+
+/*****************************************
+            Booking Add/Edit Page
+******************************************/
+
+.booking-module {
+  border-radius: 4rem;
+  width: 800px;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  flex: 75%;
+  padding: 33px 40px;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  
+}
+
+
+.booking{
+  /* border: 0.5px solid whitesmoke; */
+  margin:8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+
+}
+
+.booking label{
+  display: block;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.booking input,.booking textarea{
+  width:100%;
+  border:none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+  color:white;
+}
+
+
+.booking-button{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 0;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 8px;
+  width: 20%;
+  border-radius: 4rem;
+
+}
+
+
+
+.booking ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+.booking :-ms-input-placeholder { 
+  color: white;
+}
+
+
+/*****************************************
+            Notes Page
+******************************************/
+
+
+.notes-module {
+  border-radius: 4rem;
+  width: 800px;
+  box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+  text-align: center;
+  flex: 75%;
+  padding: 50px;
+  margin: 2% auto;
+}
+
+
+/*****************************************************************************************************************************/
+
+
+span.hide_error{visibility:hidden;}
+
+span.show_error{color:red;}
+
+#tooltip {
+	border: 1px solid black;
+	padding: 3px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+p.show_tooltip {
+	visibility:visible;
+}
+
+p.hide_tooltip {
+	visibility:hidden;
+}
+
+p.order {
+	border: 1px solid black;
+	padding: 3px;
+	background: #CCCCCC;
+}
+
+p.error {
+	color:red;
+}
+
+
+
+
