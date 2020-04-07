@@ -14,5 +14,6 @@ private domain where all the user of that comapny can access their required appl
 
 Challenges - 
 1) There was a one challanging thing regarding desktop that to show to user all apps and configuration that looks like desktop which was    one of the major challanging task for the us.   
-2)Security issues is also an challanging task as every company has it own privacy and security. we are not able to see the exact           location where your data is stored or being processed. This increases the cloud computing risks that can arise during the               implementation or management of the cloud.
+2)Security issues is also an challanging task as every company has it own privacy and security. we are not able to see the exact           location where your data is stored or being processed. This will increase the cloud computing risks that can arise at the time of the   implementation or management of the cloud.
+3)
 
