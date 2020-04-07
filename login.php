@@ -191,56 +191,8 @@
 
 <br>
 <br>
-
-</div>
-<div class="home-room-avilable-top">
-         <h2>RIC 330</h2>
-  <img src="room3.png" id="home-room-image">
-
-  <br>
-    <br>
-
-  <div class="home-room-avilable-bottom">
-    <div class="home-room-avilable-3">
-        <p2><b>Avilable</b></p2>
-        <br><br>
-        <p3>Yes</p3>
-    </div>
- <div class="home-room-avilable-3">
-        <p2>Booked By</p2>
-        <br><br>
-
-        <img src="female.png" id="user-image">
-    </div>
- <div class="home-room-avilable-3">
-    <p2><b>Book Now</b></p2>
-    <br><br>
-    <p3><a href="booking.php">+ Reserve</a></p3>  
-    </div>
-</div>
-<br>
-    <br>
-</div>
-
 </section>
 
-
-<section class="home-info-extra-module"> 
-    
-    <p2>Select Date: &nbsp;
-    <input type="date">
-    </p2>    
-    <h3>Recent Booking Schedules</h3>
-
-
-    <article>
-
-    <!--
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FRegina&amp;src=amJ0Ym9xOWxhczBmYWxtcGZ0N3M4djY5aGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23402175&amp;showTitle=1&amp;showNav=1&amp;showTabs=0&amp;showCalendars=0&amp;showPrint=0&amp;mode=WEEK&amp;showTz=0&amp;title=Conference%20Portal" style="border-width:0" width="1550" height="600" frameborder="0" scrolling="no"></iframe>
-    -->
-
-</article>
-</section>
 
 
 
