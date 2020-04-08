@@ -15,6 +15,7 @@
         echo '<a href="logout.php">Sign Out</a>   <br/>'  ;	
 
 
+        
 		// load the database and get the orders for this user
 		$db = new mysqli("localhost", "hbv559", "Gj53185", "hbv559");
 	  	if ($db->connect_error) {
