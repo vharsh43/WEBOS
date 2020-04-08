@@ -101,19 +101,26 @@
 
 
 
-
-  <div class="mgmt-table-box">
+<!-- <div class="mgmt-table-box">
     <div class="mgmt-table-inside">
 
 <div class="mgmt-table-container">
     <h2 style="text-align: center;">Rooms Booked</h2>
-    <img src="wallpaper.jpg">
-
+    <img src="wallpaper.jpg" height="100%" width="100%"> 
 </div>
 
 </div>
 
 </div>
+-->
+
+
+<div id ="example">
+
+
+</div>
+
+
 
 
 

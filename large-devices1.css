@@ -356,7 +356,7 @@ margin-left: 40%;
 .home-info-module {
   border-radius: 3rem;
   width: 99%;
-  height: 49vh;
+  height: auto;
   box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
   text-align: center;
   padding: 8px;
@@ -423,7 +423,10 @@ input[type=text]:focus, input[type=password]:focus {
 ******************************************/
 
 .mgmt-table-box {
-  background-color: rgba(0, 0, 0, 0.5);
+ /* background-color: rgba(0, 0, 0, 0.5); */
+
+
+  background-image: url(wallpaper.jpg);
   float: left;
   color: white;
   border-radius: 3rem;
@@ -439,7 +442,8 @@ input[type=text]:focus, input[type=password]:focus {
   margin: 25px;
   margin-bottom: 15px;
   padding: 8px;
-  background-color: rgba(255, 255, 255, 0.103);
+  /* background-color: rgba(255, 255, 255, 0.103); */
+  background-image: url('wallpaper.jpg');
   width: 95%;
   height: auto;
   border-radius: 0.5rem;
@@ -448,6 +452,8 @@ input[type=text]:focus, input[type=password]:focus {
 
 .mgmt-table-container {
   padding: 0.01em 16px;
+  background-image: url('wallpaper.jpg');
+
 }
 
 .mgmt-table-all {
@@ -457,6 +463,8 @@ input[type=text]:focus, input[type=password]:focus {
   display: table;
   border-bottom: 1px;
   text-align: center;
+  background-image: url('wallpaper.jpg');
+
 }
 
 .mgmt-hoverable tbody tr:hover {
@@ -466,9 +474,17 @@ input[type=text]:focus, input[type=password]:focus {
 .mgmt-light-grey,.mgmt-hover-light-grey:hover,.mgmt-light-gray,.mgmt-hover-light-gray:hover {
   color: #000;
   background-color: #f1f1f1;
+
 }
 
-
+.example{
+	background-image: url('example.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:200px;
+	width:200px;
+}
 /*****************************************
             Booking Add/Edit Page
 ******************************************/
