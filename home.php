@@ -107,7 +107,7 @@
 
 <div class="mgmt-table-container">
     <h2 style="text-align: center;">Rooms Booked</h2>
-    <img src="wallpaper.png">
+    <img src="wallpaper.jpg">
 
 </div>
 
