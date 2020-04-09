@@ -115,8 +115,9 @@
 -->
 
 
-<div id ="example">
+<div id ="home-table" style="background-image: url('wallpaper.jpg');  background-repeat: no-repeat; background-attachment: fixed; background-size: cover;   background-size: 100% 100%;  ">
 
+<p> Hey</p>
 
 </div>
 
