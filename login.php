@@ -196,7 +196,7 @@
 
 <footer>
         <p>© 2020 All rights reserved. | HARSH - SAHIL (University of Regina)</p>
-        </footer>
+         </footer>
 </body>
 
 </html>
