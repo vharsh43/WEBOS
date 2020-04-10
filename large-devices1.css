@@ -3,6 +3,7 @@
 ******************************************/
 
 
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap');
 
 
@@ -293,6 +294,7 @@ a {
 
 .topnav-right {
   float: right;
+  display: flex;
 }
 
 .user{
@@ -478,6 +480,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .home-table{
+  
   background-image: url('wallpaper.jpg');  
   background-repeat: no-repeat; 
   background-attachment: fixed; 

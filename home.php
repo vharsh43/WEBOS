@@ -42,7 +42,24 @@
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <script type="text/javascript" src="validate.js"></script>
+                <script type="text/javascript" src="validate.js">
+              function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+              
+              </script>
 
                 <link rel="stylesheet" type="text/css" media="screen and (min-width: 581px)" href="large-devices1.css" />
 </head>
@@ -62,41 +79,14 @@
    
 <div class="topnav">
                 <a href="home.php">Home Page</a>
-        
+                <div> 
+
+                <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FRegina" width="100%" height="90" frameborder="0" seamless></iframe> </div>
 
           <div class="topnav-right">
-          <div id="MyClockDisplay"> Time </div>
-          <script type="text/javascript"> 
-
-function showTime(){
-   var date =new Date();
-   var h= date.getHours();
-   var m= date.getMinutes();
-   var s= date.getSeconds();
-   var session "AM";
-
-
-  if (h ==0 ) {h=12;} 
-  
-  if(h>12){ h=h-12; sessionn ="PM"; }
-  
-  h = (h<10) ? "0" + h:h;
-  m = (m<10) ? "0" + m:m;
-  s = (s<10) ? "0" + s:s;
-  
-  
-  var time =h +":"+m+":"+s+" "+session;
-    
-  document.getElementById("MyClockDisplay").innerText = time;
-  document.getElementById("MyClockDisplay").textContent = time; 
-  
-  setTimeout(showTime, 1000); 
-}
-
-
-showTime();
-</script>
-
+          <div id="MyClockDisplay"  onload="startTime()">
+          <iframe src="http://free.timeanddate.com/clock/i78ignsx/n210/tlca/fn4/fs22/fcfff/tct/pct" frameborder="0" width="130" height="28" allowTransparency="true" sandbox></iframe>
+          </div>
             <a href="logout.php">Sign Out</a>
            </div>
 </div>
@@ -151,7 +141,8 @@ showTime();
 
 
 <div id ="home-table" style="background-image: url('wallpaper.jpg');  background-repeat: no-repeat; background-attachment: fixed; background-size: cover;   background-size: 100% 100%;  ">
-
+<a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/6119109">
+                <span style="color:gray;">Current local time in</span><br />Regina, Canada</a>
 <p> Hey</p>
 
 </div>
