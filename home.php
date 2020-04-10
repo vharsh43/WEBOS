@@ -57,8 +57,54 @@
     </style>
 
 <body>   
-<header>
+
+
    
+<div class="topnav">
+                <a href="home.php">Home Page</a>
+        
+
+          <div class="topnav-right">
+          <div id="MyClockDisplay"> Time </div>
+          <script type="text/javascript"> 
+
+function showTime(){
+   var date =new Date();
+   var h= date.getHours();
+   var m= date.getMinutes();
+   var s= date.getSeconds();
+   var session "AM";
+
+
+  if (h ==0 ) {h=12;} 
+  
+  if(h>12){ h=h-12; sessionn ="PM"; }
+  
+  h = (h<10) ? "0" + h:h;
+  m = (m<10) ? "0" + m:m;
+  s = (s<10) ? "0" + s:s;
+  
+  
+  var time =h +":"+m+":"+s+" "+session;
+    
+  document.getElementById("MyClockDisplay").innerText = time;
+  document.getElementById("MyClockDisplay").textContent = time; 
+  
+  setTimeout(showTime, 1000); 
+}
+
+
+showTime();
+</script>
+
+            <a href="logout.php">Sign Out</a>
+           </div>
+</div>
+
+       
+
+
+<!--
     <div class="companyheader">
         <div class="ch1">
             <a href="home.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
@@ -81,24 +127,12 @@
         
     </div>
 
-</header>
+  -->
+
 
 <hr>
-
-
-<div class="topnav">
-                <a href="home.php">Home Page</a>
-        
-
-          <div class="topnav-right">
-            <a href="logout.php">Sign Out</a>
-           </div>
-       
-</div>
               
 <br>
-
-
 
 
 <!-- <div class="mgmt-table-box">
@@ -112,6 +146,7 @@
 </div>
 
 </div>
+
 -->
 
 
