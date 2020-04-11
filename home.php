@@ -49,7 +49,12 @@
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
+<style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  </style>
 
 <body>   
    
@@ -108,13 +113,21 @@
 
     -->
 
+
+<table style="width:100%">
+  <tr>
+    <td>
+    <button onclick="window.location.href = 'calculator.php';"> Use Calculaltor</button>
+    </td>
+    </tr>
+
+
+<tr>
+  <td>
 <button onclick="togglePopup()">Show Popup</button>
-
-
-<button onclick="window.location.href = 'calculator.php';"> Use Calculaltor</button>
-
-
-
+    </td>
+    </tr>
+    </table>
 
 
 
