@@ -703,3 +703,289 @@ button {
 
 
 
+/*********************
+****
+***
+**********************/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 2vh;
+  letter-spacing: -0.8px;
+  background-image: url("https://cdn3.geckoandfly.com/wp-content/uploads/2016/06/os-x-10.11-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: auto;
+  cursor: default;
+}
+
+#topNav {
+  height: 2em;
+  width: 100%;
+  background-color: #EDDDE4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#rightOptions > .option > .sub-menu {
+  margin-top: 0.6em;
+}
+
+#leftOptions, #rightOptions {
+  display: flex;
+  padding-left: 1em;
+}
+#leftOptions #finderOption, #rightOptions #finderOption {
+  font-weight: bold;
+}
+#leftOptions #finderOption .sub-menu, #rightOptions #finderOption .sub-menu {
+  font-weight: normal;
+}
+#leftOptions div.fa-apple, #rightOptions div.fa-apple {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  margin-left: 0.4em;
+  padding-top: 0.95vh;
+  padding-bottom: 0.88vh;
+}
+#leftOptions .fa > .sub-menu, #rightOptions .fa > .sub-menu {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 2vh;
+}
+#leftOptions div, #rightOptions div {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.75vh;
+  padding-bottom: 0.75vh;
+}
+#leftOptions div #appleLogoMenu, #rightOptions div #appleLogoMenu {
+  margin-top: 0.5em;
+  margin-left: -0.6em;
+}
+#leftOptions div #volumeOptionMenu, #rightOptions div #volumeOptionMenu {
+  display: none;
+  width: 1.25em;
+  margin-right: 30.5vh;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+}
+#leftOptions div #volumeOptionMenu #volumeSlider > input, #rightOptions div #volumeOptionMenu #volumeSlider > input {
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+  width: 100%;
+  margin: 11px 0px 12px 0px;
+}
+#leftOptions div #batteryOptionMenu, #rightOptions div #batteryOptionMenu {
+  margin-left: -13.3em;
+}
+#leftOptions div .sub-menu, #rightOptions div .sub-menu {
+  display: none;
+  position: absolute;
+  overflow: scroll;
+  max-height: 100%;
+  color: black;
+  background-color: #EDDDE4;
+  width: 15em;
+  border-radius: 0px 0em 5px 5px;
+  border-top: 0.5px solid #d0d5da;
+  margin-top: 0.4em;
+  margin-left: -0.5em;
+  padding: 0.5em 0em 0.5em 0em;
+}
+#leftOptions div .sub-menu ul, #rightOptions div .sub-menu ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+#rightOptions {
+  padding-right: 1em;
+}
+#rightOptions span, #rightOptions i {
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  padding-top: 0.75vh;
+  padding-bottom: 0.88vh;
+}
+#rightOptions #time {
+  font-weight: 400;
+  padding-right: 1em;
+  padding-left: 0.6em;
+}
+
+#dock {
+  z-index: -1;
+  width: 122vh;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 10.5vh;
+  background-color: #bababa;
+  opacity: 0.9;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#dock .icons {
+  width: 810px;
+  /* Tooltip container */
+}
+#dock .icons div {
+  position: relative;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+}
+#dock .icons div .tooltiptext {
+  visibility: hidden;
+  width: 17.7vh;
+  background-color: #EDDDE4;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  bottom: 135%;
+  left: 50%;
+  margin-left: -4em;
+  position: absolute;
+  z-index: 1;
+}
+#dock .icons div .tooltiptext:after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #EDDDE4 transparent transparent transparent;
+}
+#dock .icons div:hover .tooltiptext {
+  visibility: visible;
+}
+#dock .icons .finder {
+  width: 6vh;
+  margin-left: 1.7vh;
+  display: inline-block;
+}
+#dock .icons .finder:after {
+  content: " ";
+  height: 0.74vh;
+  width: 0.74vh;
+  margin-top: -0.5em;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.5vh;
+  left: 50%;
+}
+#dock .icons .finder img {
+  width: 7.4vh;
+  transition: 0.2s;
+}
+#dock .icons .icon {
+  width: 6vh;
+  margin-left: 1.6vh;
+  display: inline-block;
+}
+#dock .icons .icon img {
+  width: 7.4vh;
+  transition: 0.2s;
+}
+#dock .icons .icon.settings {
+  border-left: 1px solid white;
+  padding-left: 10px;
+}
+
+.sub-menu-line {
+  border-bottom: 2px solid #d0d5da;
+}
+
+.sub-menu-list .selected.access-point {
+  margin-left: -1.3em;
+}
+.sub-menu-list .selected.access-point span {
+  margin-left: -0.5em;
+}
+.sub-menu-list .selected.access-point .fa-check {
+  color: black;
+}
+.sub-menu-list .access-point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 0em 0em 1em;
+  height: 1.5em;
+}
+.sub-menu-list .access-point .signal .hidden {
+  color: transparent;
+}
+.sub-menu-list .access-point .signal i {
+  margin-right: -0.4em;
+}
+.sub-menu-list .access-point .fa-check {
+  margin-right: -4em;
+  color: transparent;
+}
+.sub-menu-list li {
+  padding: 0.3em 0em 0.3em 1em;
+}
+.sub-menu-list li:hover {
+  background-color: #2584FB;
+  color: white;
+}
+.sub-menu-list .disabled {
+  color: grey;
+}
+.sub-menu-list .disabled:hover {
+  background-color: transparent;
+  color: grey;
+}
+.sub-menu-list .search {
+  background-color: lightgrey;
+}
+.sub-menu-list .search:hover {
+  background-color: lightgrey;
+  color: black;
+}
+.sub-menu-list .search input {
+  background: none;
+  border: 1px solid lightslategray;
+  border-radius: 3px;
+}
+.sub-menu-list .search input:focus {
+  outline: none;
+}
+
+#finderTags {
+  display: flex;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+#finderTags .finder-tag {
+  margin: -0.1em 0.3em 0em 0.2em;
+  opacity: 0.5;
+  border-radius: 20px;
+  width: 0.4vh;
+  height: 1vh;
+}
+
+#spotlightSearchInput {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#spotlightSearchInput input {
+  height: 8vh;
+  width: 40vw;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
