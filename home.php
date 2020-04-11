@@ -47,6 +47,15 @@
                 <script type="text/javascript" src="validate.js"></script>               
                 <link rel="stylesheet" type="text/css" href="large-devices1.css" />
 
+
+
+<script>
+ 	function myOpenPopup() {
+ 		$("#mobilePopup").empty().append($("<iframe width=\"100%\" height=\"100%\" style=\"border: 0px; margin: 0px; padding: 0px;\"></iframe>").attr("src", "http://jquerymobile.com/"));
+ 		$("#_MOBILEPOPUP").click();
+ 	}
+ </script> 
+
 </head>
 
 
@@ -65,7 +74,17 @@
 <div class="topnav">
                 <a href="home.php">Home Page</a>
           <div class="topnav-right">
-          <div id="MyClockDisplay" style>
+          <div    class="ch4">
+           <div class="ch4-1">
+           <img src="<?php echo $photo; ?>" width = "50px" height = "50px" >
+            
+           </div>
+            <div class="ch4-2">
+            <h3> <?php echo $usrname; ?></h3>   
+                </div>
+        
+        </div>
+          <div id="MyClockDisplay">
           <iframe src="http://free.timeanddate.com/clock/i78ihu39/n210/fn6/fcfff/tct/pct/avb/tt0/tm1/th2/tb4" frameborder="0" width="168" height="34" allowTransparency="true" style="pointer-events: none;"></iframe>
           </div>
             <a href="logout.php">Sign Out</a>
@@ -106,19 +125,10 @@
 <br>
 
 
-<!-- <div class="mgmt-table-box">
-    <div class="mgmt-table-inside">
-
-<div class="mgmt-table-container">
-    <h2 style="text-align: center;">Rooms Booked</h2>
-    <img src="wallpaper.jpg" height="100%" width="100%"> 
+<a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch video player</a>
+<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+    <iframe src="http://player.vimeo.com/video/41135183?portrait=0" width="497" height="298" seamless=""></iframe>
 </div>
-
-</div>
-
-</div>
-
--->
 
 
 
