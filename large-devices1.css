@@ -707,6 +707,8 @@ button {
 ****
 ***
 **********************/
+
+/*
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 2vh;
@@ -727,7 +729,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+*/
 #rightOptions > .option > .sub-menu {
   margin-top: 0.6em;
 }

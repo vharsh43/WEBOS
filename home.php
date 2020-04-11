@@ -32,8 +32,8 @@
 
 
 
-<!DOCTYPE html>
-<html translate="no">
+<!DOCTYPE HTML>
+<html lang="en-US" class="no-js">
 <head>
     <title>WEB OS</title>
 		
@@ -45,19 +45,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
                 <script type="text/javascript" src="validate.js"></script>      
-                <link rel="stylesheet" type="text/css" href="large-devices1.css" />
+               <!-- <link rel="stylesheet" type="text/css" href="large-devices1.css" /> -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="res/css/style.css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="res/js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="res/js/modernizr.js"></script> 
+<script type="text/javascript" src="res/js/fix-and-clock.js"></script>
+<link rel="canonical" href="http://www2.cs.uregina.ca/~hbv559/" />
 </head>
-<style>
-  table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-  </style>
+
+
+
+
+
 
 <body>   
-   
+ <!--  
 <div class="topnav">
 	<a href="home.php">Home Page</a>
 	<div class="topnav-right">
@@ -68,7 +73,7 @@
 				</div>
 				<div class="ch4-2">
 					<h3>
-						<?php echo $usrname; ?>
+						
 					</h3>
 				</div>
 			</div>
@@ -86,406 +91,444 @@
 
 
 <hr>
+        -->
+
+<!-- DESKTOP -->
 
 
-<div id="topNav">
-  <div id="leftOptions">
-    <div id="appleLogo" class="option fa fa-apple">
-      <div id="appleLogoMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="sub-menu-line">About This Mac</li>
-          <li>System Preferences...</li>
-          <li class="sub-menu-line">App Store...</li>
-          <li class="sub-menu-line">Recent Items</li>
-          <li class="sub-menu-line">Force Quit...</li>
-          <li>Sleep</li>
-          <li>Restart...</li>
-          <li class="sub-menu-line">Shut Down...</li>
-          <li>Log Out Ricardo Mercado...</li>
+<div id="page">
+<header id="head">
+	<nav id="menu">
+    	<ul>
+        <li class="apple">
+        	<a href="#all">Apple</a>
+            <ul class="sublist">
+            <li><a href="#about-this-mac" data-rel="show">About This Mac</a></li>
+            <li>Software Updates...</li>
+            <li>App Store...</li>
+            <li class="divider"></li>
+            <li>System Preferences...</li>
+            <li>Dock
+            	<span class="arrow"></span>
+                <ul class="sublist-menu">
+                <li>Turn Hiding Off</li>
+                <li>Turn Magnification Off</li>
+                <li class="divider"></li>
+                <li>Position on Left</li>
+                <li>Position on Bottom</li>
+                <li>Position on Right</li>
+                <li class="divider"></li>
+                <li>Dock Preferences...</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>Recent Items
+            	<span class="arrow"></span>
+                <ul class="sublist-menu">
+                <li class="disable">Applications</li>
+                <li class="divider"></li>
+                <li class="disable">Documents</li>
+                <li class="divider"></li>
+                <li class="disable">Servers</li>
+                <li class="divider"></li>
+                <li>Clear Menu</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>Force Quit...</li>
+            <li class="divider"></li>
+            <li>Sleep</li>
+            <li>Restart...</li>
+            <li>Shut Down...</li>
+            <li class="divider"></li>
+            <li><a href="logout.php">Log Out...</a></li>
+            </ul>
+        </li>
+        <li class="here">
+        	<a href="#all">Finder</a>
+        	<ul class="sublist">
+            <li><a href="#finder" data-rel="show">About Finder</a></li>
+            <li class="divider"></li>
+            <li>Preferences...</li>
+            <li class="divider"></li>
+            <li>Secure Empty Trash...</li>
+            <li class="divider"></li>
+            <li>Services
+            	<span class="arrow"></span>
+                <ul class="sublist-menu">
+                <li class="disable">No Services Apply</li>
+                <li>Services Preferences...</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>Hide Finder</li>
+            <li>Hide Others</li>
+            <li class="disable">Show All</li>
+            </ul>
+        </li>
+        <li>
+        	<a href="#all">File</a>
+            <ul class="sublist">
+            <li>New Finder Window</li>
+            <li>New Folder</li>
+            <li class="disable">New Folder with Selection</li>
+            <li>New Smart Folder</li>
+            <li>New Burn Folder</li>
+            <li class="disable">Open</li>
+            <li class="disable">Open With
+            	<span class="arrow"></span>
+            </li>
+            <li class="disable">Print</li>
+            <li class="disable">Close Window</li>
+            <li class="divider"></li>
+            <li>Get Info</li>
+            <li class="divider"></li>
+            <li class="disable">Compress</li>
+            <li class="divider"></li>
+            <li class="disable">Duplicate</li>
+            <li class="disable">Make Alias</li>
+            <li class="disable">Quick Look</li>
+            <li class="disable">Show Original</li>
+            <li class="disable">Add to Sidebar</li>
+            <li class="divider"></li>
+            <li class="disable">Move to Trash</li>
+            <li class="disable">Eject</li>
+            <li>Burn "Desktop" to Disc...</li>
+            <li class="divider"></li>
+            <li>Find</li>
+            <li class="divider"></li>
+            <li class="disable">Label:</li>
+            </ul>
+        </li>
+        <li>
+        	<a href="#all">Edit</a>
+        	<ul class="sublist">
+            <li class="disable">Undo</li>
+            <li class="disable">Redo</li>
+            <li class="divider"></li>
+            <li class="disable">Cut</li>
+            <li class="disable">Copy</li>
+            <li class="disable">Paste</li>
+            <li>Select All</li>
+            <li class="divider"></li>
+            <li>Show Clipboard</li>
+            <li class="divider"></li>
+            <li>Special Characters...</li>
+            </ul>
+        </li>
+        <li>
+        	<a href="#all">View</a>
+        	<ul class="sublist">
+            <li class="disable">as Icons</li>
+            <li class="disable">as List</li>
+            <li class="disable">as Columns</li>
+            <li class="disable">as Cover Flow</li>
+            <li class="divider"></li>
+            <li>Clean Up</li>
+            <li>Clean Up By
+            	<span class="arrow"></span>
+                <ul class="sublist-menu">
+                <li>Name</li>
+                <li>Kind</li>
+                <li>Date Modified</li>
+                <li>Date Created</li>
+                <li>Size</li>
+                <li>Label</li>
+                </ul>
+            </li>
+            <li>Sort By
+            	<span class="arrow"></span>
+                <ul class="sublist-menu">
+                <li>None</li>
+                <li class="divider"></li>
+                <li>Snap to Grid</li>
+                <li class="divider"></li>
+                <li>Name</li>
+                <li>Kind</li>
+                <li>Date Last Opened</li>
+                <li>Date Added</li>
+                <li>Date Modified</li>
+                <li>Date Created</li>
+                <li>Size</li>
+                <li>Label</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="disable">Hide Path Bar</li>
+            <li class="disable">Hide Status Bar</li>
+            <li class="disable">Hide Sidebar</li>
+            <li class="divider"></li>
+            <li class="disable">Toolbar</li>
+            <li class="disable">Customize Toolbar...</li>
+            <li class="divider"></li>
+            <li>Show View Options...</li>
+            </ul>
+        </li>
+        <li>
+        	<a href="#all">Go</a>
+        	<ul class="sublist">
+            <li class="disable">Back</li>
+            <li class="disable">Forward</li>
+            <li>Enclosing Folder</li>
+            <li class="divider"></li>
+            <li>All My Files</li>
+            <li>Documents</li>
+            <li>Desktop</li>
+            <li>Downloads</li>
+            <li>Home</li>
+            <li>Computer</li>
+            <li>AirDrop</li>
+            <li>Network</li>
+            <li>Applications</li>
+            <li>Utilities</li>
+            <li class="divider"></li>
+            <li>Recent Folders
+            	<span class="arrow"></span>
+                <ul class="sublist-menu">
+                <li>2012-01-10</li>
+                <li>Archieves</li>
+                <li>buildFiles</li>
+                <li>MyProjects</li>
+                <li>XCode_iPhone</li>
+                <li class="divider"></li>
+                <li>Clear Menu</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>Go to Folder...</li>
+            <li>Connect to Server...</li>
+            </ul>
+        </li>
+        <li>
+        	<a href="#all">Window</a>
+         	<ul class="sublist">
+            <li class="disable">Minimize</li>
+            <li class="disable">Zoom</li>
+            <li class="disable">Cycle Through Windows</li>
+            <li class="divider"></li>
+            <li>Bring All to Front</li>
+            </ul>
+        </li>
+        <li><a href="#all">Help</a></li>
         </ul>
-      </div>
-    </div>
-    <div id="finderOption" class="option">
-      Finder
-      <div id="finderOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="sub-menu-line">About Finder</li>
-          <li class="sub-menu-line">Preferences...</li>
-          <li class="sub-menu-line disabled">Empty Trash...</li>
-          <li class="sub-menu-line">Services</li>
-          <li>Hide Finder</li>
-          <li>Hide Others</li>
-          <li class="disabled">Show All</li>
-        </ul>
-      </div>
-    </div>
-    <div id="fileOption" class="option">
-      File
-      <div id="fileOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li>New Finder Window</li>
-          <li>New Folder</li>
-          <li>New Folder with Selection</li>
-          <li>New Smart Folder</li>
-          <li>New Tab</li>
-          <li>Open</li>
-          <li>Open With...</li>
-          <li>Print</li>
-          <li class="sub-menu-line disabled">Close Window</li>
-          <li>Get Info</li>
-          <li class="sub-menu-line">Rename</li>
-          <li class="sub-menu-line">Compress</li>
-          <li>Duplicate</li>
-          <li>Make Alias</li>
-          <li>Quick Look</li>
-          <li class="disabled">Show Original</li>
-          <li class="sub-menu-line">Add to Sidebar</li>
-          <li>Move to Trash</li>
-          <li class="sub-menu-line disabled">Eject</li>
-          <li class="sub-menu-line">Find</li>
-          <li>Tags...</li>
-          <li id="finderTags"></li>
-        </ul>
-      </div>
-    </div>
-    <div id="editOption" class="option">
-      Edit
-      <div id="editOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="disabled">Undo</li>
-          <li class="sub-menu-line disabled">Redo</li>
-          <li class="disabled">Cut</li>
-          <li class="disabled">Copy</li>
-          <li class="disabled">Paste</li>
-          <li class="sub-menu-line">Select All</li>
-          <li class="sub-menu-line">Show Clipboard</li>
-          <li class="disabled">Start Dictation</li>
-          <li class="sub-menu-line disabled">Close Window</li>
-          <li>Emoji & Symbols</li>
-        </ul>
-      </div>
-    </div>
-    <div id="viewOption" class="option">
-      View
-      <div id="viewOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="disabled">as Icons</li>
-          <li class="disabled">as List</li>
-          <li class="disabled">as Columns</li>
-          <li class="sub-menu-list disabled">as Cover Flow</li>
-          <li>Clean Up</li>
-          <li>Clean Up By</li>
-          <li class="sub-menu-line">Sort By</li>
-          <li class="disabled">Show Tab Bar</li>
-          <li class="disabled">Show Path Bar</li>
-          <li class="disabled">Show Status Bar</li>
-          <li class="disabled">Hide Sidebar</li>
-          <li class="sub-menu-line disabled">Show Preview</li>
-          <li class="disabled">Hide Toolbar</li>
-          <li class="sub-menu-line disabled">Customize Toolbar...</li>
-          <li class="sub-menu-line">Show View Options</li>
-          <li class="disabled">Enter Full Screen</li>
-        </ul>
-      </div>
-    </div>
-    <div id="goOption" class="option">
-      Go
-      <div id="goOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="disabled">Back</li>
-          <li class="disabled">Forward</li>
-          <li class="sub-menu-list">Enclosing Folder</li>
-          <li><i class="fa fa-file-text"></i> All My Files</li>
-          <li><i class="fa fa-files-o"></i> Documents</li>
-          <li><i class="fa fa-desktop"></i> Desktop</li>
-          <li><i class="fa fa-arrow-circle-down"></i> Downloads</li>
-          <li><i class="fa fa-home"></i> Home</li>
-          <li><i class="fa fa-laptop"></i> Computer</li>
-          <li><i class="fa fa-bullseye"></i> AirDrop</li>
-          <li><i class="fa fa-globe"></i> Network</li>
-          <li><i class="fa fa-cloud"></i> iCloud Drive</li>
-          <li><i class="fa fa-rocket"></i> Applications</li>
-          <li class="sub-menu-line"><i class="fa fa-wrench"></i> Utilities</li>
-          <li class="sub-menu-line">Recent Folders</li>
-          <li>Go to Folder...</li>
-          <li>Connect to Server...</li>
-        </ul>
-      </div>
-    </div>
-    <div id="windowOption" class="option">
-      Window
-      <div id="windowOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="disabled">Minimize</li>
-          <li class="disabled">Zoom</li>
-          <li class="sub-menu-list">Cycle Through Windows</li>
-          <li class="disabled">Show Previous Tab</li>
-          <li class="disabled">Show Next Tab</li>
-          <li class="disabled">Move Tab to New Window</li>
-          <li class="sub-menu-line disabled">Merge All Windows</li>
-          <li class="disabled">Bring All To Front</li>
-        </ul>
-      </div>
-    </div>
-    <div id="helpOption" class="option">
-      Help
-      <div id="helpOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="search">
-            Search <input id="helpSearchInput" type="text"></input>
-          </li>
-          <li class="sub-menu-list">Mac Help</li>
-          <li>What's New in macOS</li>
-          <li>New to Mac</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	</nav>
+    <nav id="menu-dx">
+    	<ul>
+        <li class="wireless">
+        	<a href="#all">Wireless</a>
+        </li>
+        <li class="time">
+        	<ul>
+            <li id="DateAbbr"> </li>
+            <li class="hour"> </li>
+    		<li class="point">:</li>
+        <li class="mins"> </li>
+        <li class="sec"></li>
+            </ul>
+        </li>
+        <li class="photo">
+        <img src="<?php echo $photo; ?>" width = "21px" height = "21px" >
+        </li>
+        <li class="username">
+        	<a href="#all"><?php echo $usrname; ?></a>
+        </li>
+		</ul>
+    </nav>
+</header>
 
-  <div id="rightOptions">
-    <div id="volumeOption" class="option fa fa-volume-up">
-      <div id="volumeOptionMenu" class="sub-menu">
-        <div id="volumeSlider">
-          <input type="range" orient="vertical"/>
+
+<div id="finder" class="window finder">
+	<nav class="control-window">
+    <a href="#finder" class="close" data-rel="close">close</a>
+    <a href="#" class="minimize">minimize</a>
+    <a href="#" class="deactivate">deactivate</a>
+    </nav>
+    <h1 class="titleInside">About Finder</h1>
+    <div class="container">
+    	<div class="container-inside">
+        <img src="res/img/FinderIcon.png" alt="Finder"/>
+        <div class="about-this">
+        <h2>Finder</h2>
+        <p>The Macintosh Desktop Experience</p>
+        <p class="small">Finder version 10.7.1</p>
         </div>
-      </div>
+        <div class="copyright">
+        <p>TM and © 1983-2011 Apple Inc</p>
+        <p>All Rights Reserved</p>
+        </div>
+        </div>
     </div>
-    <div id="wifiOption" class="option fa fa-wifi">
-      <div id="wifiOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="disabled">Wi-Fi: Looking for Networks...</li>
-          <li class="sub-menu-line">Turn Wi-Fi Off</li>
-          <li class="selected access-point">
-            <i class="fa fa-check"></i>
-            <span>FutoRickyWiFi</span>
-            <div class="signal">
-              <i class="fa fa-lock"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="access-point">
-            <span>Get Off My LAN</span>
-            <div class="signal">
-              <i class="fa fa-lock"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="access-point">
-            <span>PorqueFi</span>
-            <div class="signal">
-              <i class="fa fa-lock hidden"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="access-point">
-            <span>Two Girls One Router</span>
-            <div class="signal">
-              <i class="fa fa-lock"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="access-point">
-            <span>TellMyWiFiLoveHer</span>
-            <div class="signal">
-              <i class="fa fa-lock"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="access-point">
-            <span>It Hurts When IP </span>
-            <div class="signal">
-              <i class="fa fa-lock"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="access-point">
-            <span>( . )( . )</span>
-            <div class="signal">
-              <i class="fa fa-lock hidden"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li class="sub-menu-line access-point">
-            <span>HideYoKidsHideYoWiFi</span>
-            <div class="signal">
-              <i class="fa fa-lock hidden"></i>
-              <i class="fa fa-wifi"></i>
-            </div>
-          </li>
-          <li>Join Other Network...</li>
-          <li>Create Network...</li>
-          <li>Open Network Preferences...</li>
-        </ul>
-      </div>
-    </div>
-    <div id="bluetoothOption" class="option fa fa-bluetooth-b">
-      <div id="bluetoothOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="disabled">Bluetooth: On</li>
-          <li class="sub-menu-line">Turn Bluetooth Off</li>
-          <li class="disabled">Devices</li>
-          <li class="sub-menu-line">Admin's Trackpad</li>
-          <li>Send File to Device...</li>
-          <li class="sub-menu-line">Browse Files on Device...</li>
-          <li class="disabled">Open Bluetooth Preferences...</li>
-        </ul>
-      </div>
-    </div>
-    <div id="batteryOption" class="option fa fa-battery-three-quarters">
-      <div id="batteryOptionMenu" class="sub-menu">
-        <ul class="sub-menu-list">
-          <li class="sub-menu-line">Power Source: Battery</li>
-          <li class="disabled">Using significant Energy</li>
-          <li class="disabled">Devices</li>
-          <li class="sub-menu-line">Admin's Trackpad</li>
-          <li>Show Battery Percentage</li>
-          <li>Open Energy Save Preferences...</li>
-        </ul>
-      </div>
-    </div>
-    <div id="timeOption" class="option"></div>
-    <div id="searchOption" class="option fa fa-search" onclick="toggleSpotlight()"></div>
-    <div id="sideMenuOption" class="option fa fa-list-ul"></div>
-  </div>
 </div>
 
-<!-- SPOTLIGHT SEARCH -->
-<div id="spotlightSearchInput">
-  <input type="text" placeholder="Spotlight Search">
+<div id="about-this-mac" class="window mac">
+	<nav class="control-window">
+    <a href="#about-this-mac" class="close" data-rel="close">close</a>
+    <a href="#" class="deactivate">deactivate</a>
+    <a href="#" class="deactivate">deactivate</a>
+    </nav>
+    <h1 class="title-mac">About This Mac</h1>
+    <div class="container">
+    	<div class="container-inside">
+    	<img src="res/img/MacOSX.png" alt="Mac OS X"/>
+    	<div class="about-this">
+    	<p>Version 10.7.2</p>
+        <p><a class="button about" href="#">Software Update...</a></p>
+        <ul class="hardware">
+        <li><strong>Processor</strong> 2 Ghz Intel Core 2 Duo</li>
+        <li><strong>Memory</strong> 4 GB 1067 Mhz DDR3</li>
+        <li><strong>Startup Disk</strong> Macintosh HD</li>
+        </ul>
+        <p><a class="button about" href="#">More Info...</a></p>
+    	<div class="copyright">
+    	<p>TM and © 1983-2011 Apple Inc</p>
+        <p>All Rights Reserved</p>
+    	</div>
+    	</div>
+    	</div>
+    </div>
 </div>
+
+<div id="warning" class="window warning">
+	<div class="tab"></div>
+    <div class="container">
+    	<div class="container-alert">
+        <img src="res/img/Alert.png" alt="alert"/>
+        <div class="about-alert">
+        <h2>Alert</h2>
+        <p>This application cannot be used in this version</p>
+        <a href="#warning" class="button blink" data-rel="close">Close</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div id="trash" class="window warning">
+	<div class="tab"></div>
+    <div class="container">
+    	<div class="container-alert">
+        <img src="res/img/FinderIcon.png" width="48px" height="48px" alt="alert"/>
+        <div class="about-alert">
+        <h2>Secure Empty Trash permanently erases the items in the Trash. Are you sure you want to permanently erase them?</h2>
+        <p>If you choose Secure Empty Trash, you can't recover the items unless you've backed them up using Time Machine or another backup program.</p>
+        <a href="#warning" class="button blink" data-rel="">Secure Empty Trash</a>
+        <a href="#trash" class="button simple" data-rel="close">Cancel</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="spec" class="window spec">
+	<nav class="control-window">
+    <a href="#" class="deactivate">deactivate</a>
+    <a href="#" class="deactivate">deactivate</a>
+    <a href="#" class="deactivate">deactivate</a>
+    </nav>
+    <h1 class="titleInside">Project Specifics</h1>
+    <div class="container">
+    	<div class="container-inside">
+        <img src="res/img/folder.png" alt="Project Specifics" />
+        <div class="about-this">
+    	<p class="vers">Version 1.1</p>
+        <p><strong>New Version Featured</strong></p>
+        <p>Replace some image elements with CSS3, Dock, hide and show window, fix and optimize the code</p>
+		<p><strong>Modern Browser Supported</strong></p>
+    	<p>Firefox, Safari and Chrome</p>
+        <p><strong>HTML 5 and CSS3</strong></p>
+    	<p>Intensive use of the CSS3 Keyframes Animations and :target pseudo-class and for GUI</p>
+        <p><strong>Javascript</strong></p>
+        <p>Clock, Fake Login and add special classes after login to remove animations and fix the desktop, hide and show window and and added classes for the dock</p>
+        <p><strong>Draggable Window</strong></p>
+        <p>Use a jQuery UI Draggable plugin</p>
+        <p><strong>Images</strong></p>
+        <p>Use images for logos, user-avatar, spinner loading, cursors, background images, icons</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- DOCK -->
-
-<div id="dock">
-  <div class="icons">
-    <div class="finder">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/finder-icon.png" alt="finder">
-      <span class="tooltiptext">Finder</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/safari-icon.png" alt="Safari">
-      <span class="tooltiptext">Safari</span>
-    </div>
-    <div class="icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_(2011).png" alt="Chrome">
-      <span class="tooltiptext">Chrome</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/notes-icon.png" alt="Notes">
-      <span class="tooltiptext">Notes</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/calendar-icon.png" alt="Calendar">
-      <span class="tooltiptext">Calendar</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/reminders-icon.png" alt="reminders">
-      <span class="tooltiptext">Reminders</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/facetime-icon.png" alt="facetime" title="" style="">
-      <span class="tooltiptext">FaceTime</span>
-    </div>
-    <div class="icon">
-      <img src="http://www.myiconfinder.com/uploads/iconsets/21cabddae0ef1e593f7d11a4262a3ec9-appstore.png" alt="App Store" title="" style="">
-      <span class="tooltiptext">App Store</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/contacts-icon.png" alt="contacts">
-      <span class="tooltiptext">Contacts</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/mail-icon.png" alt="mail">
-      <span class="tooltiptext">Mail</span>
-    </div>
-    <div class="icon">
-      <img src="http://cdn.osxdaily.com/wp-content/uploads/2013/11/maps-icon-os-x-300x300.png" alt="maps">
-      <span class="tooltiptext">Maps</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/messages-icon.png" alt="messages">
-      <span class="tooltiptext">Messages</span>
-    </div>
-    <div class="icon">
-      <img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/itunes_5122x.png" alt="itunes">
-      <span class="tooltiptext">iTunes</span>
-    </div>
-    <div class="icon settings">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/system-preferences-icon.png" alt="system preferences">
-      <span class="tooltiptext">Settings</span>
-    </div>
-  </div>
+<div class="dock">
+	<ul>
+    	<li id="finderr">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>Finder</span></em>
+                <img src="res/img/FinderIcon.png" alt="Finder"/>
+            </a>
+        </li>
+        <li id="launchPad">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>Launchpad</span></em>
+                <img src="res/img/launchPad.png" alt="Launchpad"/>
+            </a>
+        </li>
+        <li id="expose">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>Mission Control</span></em>
+                <img src="res/img/expose.png" alt="Mission Control"/>
+            </a>
+        </li>
+        <li id="appStore">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>App Store</span></em>
+                <img src="res/img/appstore.png" alt="App Store"/>
+            </a>
+        </li>
+        <li id="safari">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>Safari</span></em>
+                <img src="res/img/Safari.png" alt="Safari"/>
+            </a>
+        </li>
+        <li id="iChat">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>iChat</span></em>
+                <img src="res/img/ichat.png" alt="iChat"/>
+            </a>
+        </li>
+        <li id="facetime">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>FaceTime</span></em>
+                <img src="res/img/facetime.png" alt="Facetime"/>
+            </a>
+        </li>
+        <li id="addressBook">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>Address Book</span></em>
+                <img src="res/img/address.png" alt="Address Book"/>
+            </a>
+        </li>
+        <li id="preview">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>Preview</span></em>
+                <img src="res/img/preview.png" alt="Preview"/>
+            </a>
+        </li>
+        <li id="iTunes">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>iTunes</span></em>
+                <img src="res/img/iTunes.png" alt="iTunes"/>
+            </a>
+        </li>
+        <li id="preferences">
+        	<a href="#warning" data-rel="showOp">
+            	<em><span>System Preferences</span></em>
+                <img src="res/img/preferences.png" alt="System Preferences"/>
+            </a>
+        </li>
+        <li id="trash">
+        	<a href="#trash" data-rel="showOpTrash">
+            	<em><span>Trash</span></em>
+                <img src="res/img/trash.png" alt="Trash"/>
+            </a>
+        </li>
+    </ul>
 </div>
 
-
-
-
-
-
-
-            
-            
-            
-            
-            
-            
-            
-
-            
-   
-            
-
-
-<div class="popup" id="popup-1">
-  <div class="overlay"></div>
-   <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-    <h1>Calculator</h1>
-    <iframe src='https://www.embed.com/app/calculator/gray-calculator.html' style='width: 500px; height: 500px;' scrolling='no' frameBorder='0' sandbox></iframe>
-  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table>
-    <tr><td><button onclick="window.location.href = 'calculator.php';">edit</button></td></tr>
-    <tr><td><button onclick="togglePopup()">edit</button></td></tr>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer style="margin-top:41%;">
-    <p>© 2020 All rights reserved. | VHARSH43</p>
-    </footer>
 
 
 
@@ -521,131 +564,6 @@ setInterval(chargebattery, 5000);
 function togglePopup(){
   document.getElementById("popup-1").classList.toggle("active");
 
-
-
-
-
-  // FUNCTIONS
-function getClock(){
-  // let tday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-  let shortTday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-  let tmonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  let d = new Date();
-  let nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
-  let nhour = d.getHours(), nmin = d.getMinutes(), ap;
-
-  switch (true) {
-    case (nhour === 0):
-      ap = " AM";
-      nhour = 12;
-      break;
-    case (nhour < 12):
-      ap = " AM";
-      break;
-    case (nhour === 12):
-      ap = " PM";
-      break;
-    case (nhour > 12):
-      ap = " PM"; 
-      nhour -= 12;
-      break;
-    default:
-      ap = "";
-  }
-
-  if (nmin <= 9) {
-   nmin = "0" + nmin; 
-  }
-
-  // document.getElementById('time').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
-  document.getElementById('timeOption').innerHTML=""+shortTday[nday]+" "+nhour+":"+nmin+ap+"";
-}
-
-function topNavHighlight(target) {
-  if (target.hasClass('option')) {
-    target.css({
-      'background-color': '#2584FB',
-      'color': 'white'
-    }); 
-  }
-  $('#topNav').addClass('active');
-  target.addClass('active');
-  target.addClass('opened');
-  target.find('.sub-menu').css('display', 'block')
-}
-
-function removeHighlight() {
-  $('.option').css({
-    'background-color': 'transparent',
-    'color': 'black'
-  });
-  $('.option').find('.sub-menu').css('display', 'none')
-  $('.option').removeClass('active');
-  $('.option').removeClass('opened');
-}
-
-function inactiveTopNav() {
-  removeHighlight();
-  $('#topNav').removeClass('active');
-  $('.option').removeClass('active'); 
-}
-
-function setFinderTags() {
-  let tagColors = ["red", "orange", "yellow", "green", "blue", "mediumpurple", "gray"]
-  for (let i = 0; i < 7; i++) {
-    if (tagColors[i] === "mediumpurple") {
-      $('#finderTags').append("<div class='finder-tag' style='background-color:" + tagColors[i] + "; border: 1px solid purple;' ></div>");
-    } else {
-      $('#finderTags').append("<div class='finder-tag' style='background-color:" + tagColors[i] + "; border: 1px solid dark" + tagColors[i] + ";' ></div>"); 
-    }
-  }
-}
-
-function toggleSpotlight() {
-  $('#spotlightSearchInput').show();
-}
-
-// DOCUMENT READY
-$(document).ready(function() {
-  $('#spotlightSearchInput').hide();
-  getClock();
-  setInterval(getClock, 1000);
-  setFinderTags();
-  
-  $(document).on('click', (e) => {
-    if (!$(e.target).hasClass('option')) {
-      inactiveTopNav();
-    }
-    if (!$(e.target).is('#spotlightSearchInput input') || !$(e.target).is('#searchOption')) {
-      $('#spotlightSearchInput').hide(); 
-    }
-  })
-  
-  $('.option').on('click', (e) => {
-    if ($(e.target).hasClass('option') && $(e.target).hasClass('active')) {
-      inactiveTopNav();
-    } else {
-      removeHighlight();
-      topNavHighlight($(e.target)); 
-    }
-  })
-  
-  $('.option').on('mouseover', (e) => {
-    if ($('#topNav').hasClass('active') && $(e.target).hasClass('option')) {
-      removeHighlight();
-      topNavHighlight($(e.target));
-    }
-  })
-  
-  $('#helpOption').on('click', () => {
-    setTimeout(() => { $('#helpSearchInput').focus() }, 100);
-  })
-
-  $('#helpOption').on('mouseover', () => {
-    setTimeout(() => { $('#helpSearchInput').focus() }, 100);
-  })
-});
-}
 </script>
 
   </body>
