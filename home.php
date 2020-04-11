@@ -47,29 +47,10 @@
                 <script type="text/javascript" src="validate.js"></script>               
                 <link rel="stylesheet" type="text/css" href="large-devices1.css" />
 
-
-
-<script>
- 	function myOpenPopup() {
- 		$("#mobilePopup").empty().append($("<iframe width=\"100%\" height=\"100%\" style=\"border: 0px; margin: 0px; padding: 0px;\"></iframe>").attr("src", "http://jquerymobile.com/"));
- 		$("#_MOBILEPOPUP").click();
- 	}
- </script> 
-
 </head>
 
 
-<style>
-
-    .err_msg{ color:#c20101;
-      text-decoration:underline;
-    }
-  
-    </style>
-
 <body>   
-
-
    
 <div class="topnav">
                 <a href="home.php">Home Page</a>
@@ -91,48 +72,31 @@
            </div>
 </div>
 
-       
-
-
-<!--
-    <div class="companyheader">
-        <div class="ch1">
-            <a href="home.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
-
-        </div>
-        <div class="ch2">
-            <h1> <a href="home.php"> WEB OS</a></h1> 
-
-        </div>
-        <div    class="ch4">
-           <div class="ch4-1">
-           <img src="<?php echo $photo; ?>" width = "50px" height = "50px" >
-            
-           </div>
-            <div class="ch4-2">
-            <h3> <?php echo $usrname; ?></h3>   
-                </div>
-        
-        </div>
-        
-    </div>
-
-  -->
-
 
 <hr>
               
 
-<div class="popup" id="popup-1">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-    <h1>Title</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
-  </div>
-</div>
 
-<button onclick="togglePopup()">Show Popup</button>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>You have two options to close this modal:</p>
+        <p>Click on the "x" or click anywhere outside of the modal!</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+
+
 
 
 
@@ -142,9 +106,24 @@
 <footer style="margin-top:41%;">
     <p>© 2020 All rights reserved. | VHARSH43</p>
     </footer>
-</body>
 
 
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
   </body>
+
   </html>
