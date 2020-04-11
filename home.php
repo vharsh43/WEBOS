@@ -44,7 +44,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-                <script type="text/javascript" src="validate.js"></script>               
+                <script type="text/javascript" src="validate.js"></script>      
                 <link rel="stylesheet" type="text/css" href="large-devices1.css" />
 
 </head>
@@ -71,20 +71,21 @@
             <a href="logout.php">Sign Out</a>
            </div>
 </div>
+          </div>
 
 
 <hr>
               
 
-
+<!--
 <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
 
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h3>Modal Header</h3>
       </header>
       <div class="w3-container">
         <p>You have two options to close this modal:</p>
@@ -95,8 +96,28 @@
       </footer>
     </div>
   </div>
+          -->
 
 
+          <div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+  </div>
+</div>
+
+<button onclick="togglePopup()">Show Popup</button><div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+  </div>
+</div>
+
+<button onclick="togglePopup()">Show Popup</button>
 
 
 
@@ -113,6 +134,8 @@
 
 
 <script>
+
+  /*
 // Get the modal
 var modal = document.getElementById('id01');
 
@@ -121,6 +144,13 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+*/
+
+
+function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
 }
 </script>
 
