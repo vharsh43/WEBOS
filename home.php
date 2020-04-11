@@ -33,7 +33,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html translate="no">
 <head>
     <title>WEB OS</title>
 		
@@ -90,21 +90,28 @@
   <div class="overlay"></div>
   <div class="content">
     <div class="close-btn" onclick="togglePopup()">&times;</div>
-    <h1>Title</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+    <h1>Calculator</h1>
+    <iframe src='https://www.embed.com/app/calculator/gray-calculator.html' style='width: 500px; height: 500px;' scrolling='no' frameBorder='0' sandbox></iframe>
   </div>
 </div>
-
+<!--
 <button onclick="togglePopup()">Show Popup</button><div class="popup" id="popup-1">
   <div class="overlay"></div>
   <div class="content">
     <div class="close-btn" onclick="togglePopup()">&times;</div>
-    <h1>Title</h1>
+    <h1>Tiitle 2</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+    <iframe src='https://www.embed.com/app/calculator/gray-calculator.html' style='width: 500px; height: 500px;' scrolling='no' frameBorder='0' sandbox></iframe>
+
   </div>
 </div>
 
+    -->
+
 <button onclick="togglePopup()">Show Popup</button>
+
+
+<button onclick="window.location.href = 'calculator.php';"> Use Calculaltor</button>
 
 
 
@@ -139,7 +146,11 @@ function chargebattery() {
       a.innerHTML = "&#xf240;";
     }, 4000);
 }
+
+
 chargebattery();
+
+
 setInterval(chargebattery, 5000);
 
 function togglePopup(){

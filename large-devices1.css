@@ -271,10 +271,16 @@ a {
   background-color: rgba(255, 255, 255, 0.103);
   font: "Montserrat";
   position: relative;
+  padding: 2px;
   top: 0;
   width: 100%;
   border-radius: 0.5rem;
   box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+}
+
+.MyClockDisplay{
+  position: relative;
+  top: 2px;
 }
 
 .topnav a {
@@ -627,7 +633,7 @@ p.error {
   top:0px;
   left:0px;
   width:100vw;
-  height:100vh;
+  height:100%;
   background:rgba(0,0,0,0.7);
   z-index:1;
   display:none;
@@ -640,10 +646,10 @@ p.error {
   transform:translate(-50%,-50%) scale(0);
   background:#fff;
   width:500px;
-  height:250px;
+  height:100%;
   z-index:2;
   text-align:center;
-  padding:20px;
+  padding:2px;
   box-sizing:border-box;
   font-family:"Open Sans",sans-serif;
 }
@@ -654,7 +660,7 @@ p.error {
   right:20px;
   top:20px;
   width:30px;
-  height:30px;
+  height:100%;
   background:#222;
   color:#fff;
   font-size:25px;
