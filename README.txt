@@ -48,7 +48,7 @@ Cloud computing has been seen as one of the technology that give rise to the nex
    
     
 /**********
-Mac OS - Original work by Alessio Atzenicheck 
+Mac OS - Modified work from Alessio Atzenicheck 
 Copyright for Basic Code @AleesioAtzenicheck
 ***********/
 
