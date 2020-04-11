@@ -46,6 +46,7 @@
 		
                 <script type="text/javascript" src="validate.js"></script>      
                 <link rel="stylesheet" type="text/css" href="large-devices1.css" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -63,40 +64,26 @@
             <div class="ch4-2">
             <h3> <?php echo $usrname; ?></h3>   
                 </div>
+
         
         </div>
           <div id="MyClockDisplay">
           <iframe src="http://free.timeanddate.com/clock/i78ihu39/n210/fn6/fcfff/tct/pct/avb/tt0/tm1/th2/tb4" frameborder="0" width="168" height="34" allowTransparency="true" style="pointer-events: none;"></iframe>
+          
           </div>
+          <div id="div1" class="fa"></div>
+
             <a href="logout.php">Sign Out</a>
+
            </div>
+
+
 </div>
-          </div>
 
 
 <hr>
               
 
-<!--
-<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
-
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-teal"> 
-        
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <h3>Modal Header</h3>
-      </header>
-      <div class="w3-container">
-        <p>You have two options to close this modal:</p>
-        <p>Click on the "x" or click anywhere outside of the modal!</p>
-      </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer>
-    </div>
-  </div>
-          -->
 
 
           <div class="popup" id="popup-1">
@@ -135,19 +122,25 @@
 
 <script>
 
-  /*
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 4000);
 }
-
-*/
-
+chargebattery();
+setInterval(chargebattery, 5000);
 
 function togglePopup(){
   document.getElementById("popup-1").classList.toggle("active");
