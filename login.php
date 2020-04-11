@@ -82,12 +82,12 @@
 		
 		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 		
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-
-                <script type="text/javascript" src="validate.js"></script>
-
-                <link rel="stylesheet" type="text/css" media="screen and (min-width: 581px)" href="large-devices1.css" />
+        <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+                <script type="text/javascript" src="validate.js"></script>               
+                <link rel="stylesheet" type="text/css" href="large-devices1.css" />
 </head>
 
 
@@ -196,7 +196,7 @@
 
 <footer>
         <p>© 2020 All rights reserved. | HARSH - SAHIL (University of Regina)</p>
-         </footer>
+        </footer>
 </body>
 
 </html>

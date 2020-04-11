@@ -37,31 +37,16 @@
 <head>
     <title>WEB OS</title>
 		
-		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+   
+   
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <script type="text/javascript" src="validate.js"></script>               
+                <link rel="stylesheet" type="text/css" href="large-devices1.css" />
 
-                <script type="text/javascript" src="validate.js">
-              function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-              
-              </script>
-
-                <link rel="stylesheet" type="text/css" media="screen and (min-width: 581px)" href="large-devices1.css" />
 </head>
 
 
@@ -79,13 +64,9 @@ function checkTime(i) {
    
 <div class="topnav">
                 <a href="home.php">Home Page</a>
-                <div> 
-
-                <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FRegina" width="100%" height="90" frameborder="0" seamless></iframe> </div>
-
           <div class="topnav-right">
-          <div id="MyClockDisplay"  onload="startTime()">
-          <iframe src="http://free.timeanddate.com/clock/i78ignsx/n210/tlca/fn4/fs22/fcfff/tct/pct" frameborder="0" width="130" height="28" allowTransparency="true" sandbox></iframe>
+          <div id="MyClockDisplay" style>
+          <iframe src="http://free.timeanddate.com/clock/i78ihu39/n210/fn6/fcfff/tct/pct/avb/tt0/tm1/th2/tb4" frameborder="0" width="168" height="34" allowTransparency="true" style="pointer-events: none;"></iframe>
           </div>
             <a href="logout.php">Sign Out</a>
            </div>
@@ -139,13 +120,6 @@ function checkTime(i) {
 
 -->
 
-
-<div id ="home-table" style="background-image: url('wallpaper.jpg');  background-repeat: no-repeat; background-attachment: fixed; background-size: cover;   background-size: 100% 100%;  ">
-<a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/6119109">
-                <span style="color:gray;">Current local time in</span><br />Regina, Canada</a>
-<p> Hey</p>
-
-</div>
 
 
 
