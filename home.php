@@ -395,7 +395,7 @@
 
 <div class="dock">
 	<ul>
-    	<li id="finderr">
+    	<li id="finder">
         	<a href="#warning" data-rel="showOp">
             	<em><span>Finder</span></em>
       <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/finder-icon.png" alt="finder">
@@ -424,12 +424,13 @@
         	<a href="#warning" data-rel="showOp">
             	<em><span>Chrome</span></em>
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_(2011).png" alt="Chrome">
+        </a>
         </li>
+
         <li id="facetime">
         	<a href="#youtube" data-rel="showOp">
             	<em><span>Notes</span></em>
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/notes-icon.png" alt="Notes">
-                
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/notes-icon.png" alt="Notes">  
             </a>
         </li>
         
@@ -465,68 +466,6 @@
         
 
 
-        <!-- DOCK --
-
-<div class="dock">
-  <div class="icons">
-    <div class="finder">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/finder-icon.png" alt="finder">
-      <span class="tooltiptext">Finder</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/safari-icon.png" alt="Safari">
-      <span class="tooltiptext">Safari</span>
-    </div>
-    <div class="icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_(2011).png" alt="Chrome">
-      <span class="tooltiptext">Chrome</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/notes-icon.png" alt="Notes">
-      <span class="tooltiptext">Notes</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/calendar-icon.png" alt="Calendar">
-      <span class="tooltiptext">Calendar</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/reminders-icon.png" alt="reminders">
-      <span class="tooltiptext">Reminders</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/facetime-icon.png" alt="facetime" title="" style="">
-      <span class="tooltiptext">FaceTime</span>
-    </div>
-    <div class="icon">
-      <img src="http://www.myiconfinder.com/uploads/iconsets/21cabddae0ef1e593f7d11a4262a3ec9-appstore.png" alt="App Store" title="" style="">
-      <span class="tooltiptext">App Store</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/contacts-icon.png" alt="contacts">
-      <span class="tooltiptext">Contacts</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/mail-icon.png" alt="mail">
-      <span class="tooltiptext">Mail</span>
-    </div>
-    <div class="icon">
-      <img src="http://cdn.osxdaily.com/wp-content/uploads/2013/11/maps-icon-os-x-300x300.png" alt="maps">
-      <span class="tooltiptext">Maps</span>
-    </div>
-    <div class="icon">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/messages-icon.png" alt="messages">
-      <span class="tooltiptext">Messages</span>
-    </div>
-    <div class="icon">
-      <img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/itunes_5122x.png" alt="itunes">
-      <span class="tooltiptext">iTunes</span>
-    </div>
-    <div class="icon settings">
-      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/system-preferences-icon.png" alt="system preferences">
-      <span class="tooltiptext">Settings</span>
-    </div>
-  </div>
-</div>
 
 
 
@@ -558,8 +497,6 @@ chargebattery();
 
 setInterval(chargebattery, 5000);
 
-function togglePopup(){
-  document.getElementById("popup-1").classList.toggle("active");
 
 </script>
 
