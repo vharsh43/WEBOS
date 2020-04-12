@@ -81,5 +81,5 @@ At last, after everything is done now is the time for logout from the page. To l
 
 Reference
 1)	http://www.alessioatzeni.com
-2)	http://www.modernizr.com
+2)	http://www.modernizr.com 
 
