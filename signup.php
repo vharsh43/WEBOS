@@ -29,11 +29,11 @@
    
     <div class="companyheader">
         <div class="ch1">
-            <a href="homepage.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
+            <a href="login.php"> <img src="logoo.png" alt="logo" height="60px" width="max">    </a>  
 
         </div>
         <div class="ch2">
-            <h1> <a href="homepage.php"> CONFERENCE PORTAL</a></h1> 
+            <h1> <a href="login.php"> WEB OS</a></h1> 
 
         </div>
         <div    class="ch3">
@@ -46,7 +46,7 @@
 <hr>
 
 <div class="topnav">
-                <a href="homepage.php">Home Page</a>
+                <a href="login.php">Login Page</a>
           
        
        
@@ -139,7 +139,7 @@
  
   <div class="container signin">
 
-    <p>Already have an account? <a href="homepage.php">Sign in</a>.</p>
+    <p>Already have an account? <a href="login.php">Sign in</a>.</p>
   </div>
 
 
@@ -291,7 +291,7 @@ if (isset($_POST["submit"]) && $_POST["submit"])
 
         if ($event_4 == true)
         {
-            header("Location: homepage.php");
+            header("Location: login.php");
             $database->close();
             exit();
         }

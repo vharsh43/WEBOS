@@ -285,6 +285,9 @@
         <li class="photo">
         <img src="<?php echo $photo; ?>" width = "21px" height = "21px" >
         </li>
+        <li>
+        <div id="MyClockDisplay">
+        </li>
         <li class="username">
         	<a href="#all"><?php echo $usrname; ?></a>
         </li>
