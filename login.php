@@ -144,7 +144,7 @@
 			<input type="hidden" name="submitted" value="1" />
 			<p><label>
 				Username
-                <input type="text" id="username" name="username" />
+                <input type="text" id="username" value="vharsh43@gmail.com" name="username" />
 
 				</label>
                 <br>
@@ -153,7 +153,7 @@
 			</p>
 			<p><label>
 				Password
-                <input type="password"  id="password" name="password" />
+                <input type="password" value="Harsh@123" id="password" name="password" />
 
 				</label>
                 <br>

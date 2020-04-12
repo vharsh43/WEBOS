@@ -53,27 +53,23 @@ setInterval( function() {
 
   
 
-//-----------------------------------------------------------------------------------
-//	4.	Dock
-//-----------------------------------------------------------------------------------
-
-$('.dock ul li').hover(
-	function(){
-		$(this).addClass('ok').prev().addClass('prev').prev().addClass('prev-ancor');
-		$(this).addClass('ok').next().addClass('next').next().addClass('next-ancor');
-	},
-	function(){
-		$('.dock ul li').removeClass('ok prev next next-ancor prev-ancor');
-	}
-);
 
 //-----------------------------------------------------------------------------------
-//	5.	Hide and Close
+//	4.	Hide and Close
 //-----------------------------------------------------------------------------------
+
+
+
 var left = 50 + '%';
 var top = 15 + '%';
 var item = $('<div class="fresh"></div>').hide();
 var itemR = $('<div class="fresh"></div>').hide();
+
+
+
+
+
+
 
 $("a[data-rel=close]").click(function(e) {
     e.preventDefault();

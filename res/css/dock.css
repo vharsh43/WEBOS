@@ -2,20 +2,36 @@
 /*	01.	Dock
 /*-----------------------------------------------------------------------------------*/
 
+
+
+
 .dock {
 	position: absolute;
 	bottom: 0;
 	z-index: 9999;
-	width: 100%;
+	width: auto;
 	text-align: center;
-}
-.dock ul {
-	position: relative;
+	left: 45%;
+
+	background-color: #bababa;
+	opacity: 0.9;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+
+
 	display: inline-block;
-	padding: 0 5px;
-	margin: 0;
-	background:url(../img/dock-bg.png) repeat-x bottom;
+	height: 4.4em;
+	left: 50%;
+	padding: 0 10px;
+	perspective: 1000px;
+	position: absolute;
+	text-align: center;
+	transform: translatex(-50%);
+
+
+
 }
+
 .dock ul:before, .dock ul:after {
 	content: "";
 	position: absolute;
@@ -23,14 +39,7 @@
 	bottom: 0;
 	width: 38px;
 }
-.dock ul:before {
-	left: -38px;
-	background: url(../img/dock-bg-left.png) no-repeat left bottom;
-}
-.dock ul:after {
-	right: -38px;
-	background: url(../img/dock-bg-right.png) no-repeat right bottom;
-}
+
 .dock li {
 	display: inline-block;
 	position: relative;
@@ -114,16 +123,4 @@
 	-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(91%, rgba(255, 255, 255, 0.5)), color-stop(91.01%, transparent), to(transparent));
 }
 
-.bounce {
-	-webkit-animation: bounce 0.4s 4 alternate ease-out;
-	-moz-animation: bounce 0.4s 4 alternate ease-out;
-}
-@-webkit-keyframes bounce {
-	  0% { -webkit-transform: translateY(0); }
-	100% { -webkit-transform: translateY(-20px); }
-}
 
-@-moz-keyframes bounce {
-	  0% { -moz-transform: translateY(0); }
-	100% { -moz-transform: translateY(-20px); }
-}
