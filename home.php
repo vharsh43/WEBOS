@@ -44,11 +44,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-                <script type="text/javascript" src="validate.js"></script>      
-               <!-- <link rel="stylesheet" type="text/css" href="large-devices1.css" /> -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="validate.js"></script>     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 <link rel="stylesheet" type="text/css" media="screen" href="res/css/style.css"/>
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="res/js/jquery-ui-1.8.17.custom.min.js"></script>
 <script type="text/javascript" src="res/js/modernizr.js"></script> 
@@ -62,36 +63,7 @@
 
 
 <body>   
- <!--  
-<div class="topnav">
-	<a href="home.php">Home Page</a>
-	<div class="topnav-right">
-		<div class="ch4">
-			<div class="ch4-1">
-				<img src="
-					<?php echo $photo; ?>" width = "50px" height = "50px" >
-				</div>
-				<div class="ch4-2">
-					<h3>
-						
-					</h3>
-				</div>
-			</div>
-			<div id="MyClockDisplay">
-				<iframe src="http://free.timeanddate.com/clock/i78ihu39/n210/fn6/fcfff/tct/pct/avb/tt0/tm1/th2/tb4" frameborder="0" width="168" height="34" allowTransparency="true" style="pointer-events: none;"></iframe>
-			</div>
-			<div id="div1" class="fa"></div>
-			<a href="logout.php">Sign Out</a>
-		</div>
-	</div>
-</div>
-          
 
-
-
-
-<hr>
-        -->
 
 <!-- DESKTOP -->
 
@@ -275,9 +247,6 @@
             <li>Documents</li>
             <li>Desktop</li>
             <li>Downloads</li>
-            <li>Home</li>
-            <li>Computer</li>
-            <li>AirDrop</li>
             <li>Network</li>
             <li>Applications</li>
             <li>Utilities</li>
@@ -285,11 +254,7 @@
             <li>Recent Folders
             	<span class="arrow"></span>
                 <ul class="sublist-menu">
-                <li>2012-01-10</li>
                 <li>Archieves</li>
-                <li>buildFiles</li>
-                <li>MyProjects</li>
-                <li>XCode_iPhone</li>
                 <li class="divider"></li>
                 <li>Clear Menu</li>
                 </ul>
@@ -297,16 +262,6 @@
             <li class="divider"></li>
             <li>Go to Folder...</li>
             <li>Connect to Server...</li>
-            </ul>
-        </li>
-        <li>
-        	<a href="#all">Window</a>
-         	<ul class="sublist">
-            <li class="disable">Minimize</li>
-            <li class="disable">Zoom</li>
-            <li class="disable">Cycle Through Windows</li>
-            <li class="divider"></li>
-            <li>Bring All to Front</li>
             </ul>
         </li>
         <li><a href="#all">Help</a></li>
@@ -323,7 +278,8 @@
             <li class="hour"> </li>
     		<li class="point">:</li>
         <li class="mins"> </li>
-        <li class="sec"></li>
+        <li class="point">:</li>
+        <li class="second"></li>
             </ul>
         </li>
         <li class="photo">
@@ -388,6 +344,22 @@
     </div>
 </div>
 
+<div id="youtube" class="window mac">
+	<nav class="control-window">
+    <a href="#youtube" class="close" data-rel="close">close</a>
+    <a href="#" class="deactivate">deactivate</a>
+    <a href="#" class="deactivate">deactivate</a>
+    </nav>
+    <h1 class="title-mac">Youtube</h1>
+    <div class="container">
+    	<div class="container-inside">
+        <iframe width="260" height="315" src="https://www.youtube-nocookie.com/embed/23bgFIVsvZY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    	</div>
+    	</div>
+    </div>
+</div>
+
+
+
 <div id="warning" class="window warning">
 	<div class="tab"></div>
     <div class="container">
@@ -419,88 +391,48 @@
 
 
 
-<div id="spec" class="window spec">
-	<nav class="control-window">
-    <a href="#" class="deactivate">deactivate</a>
-    <a href="#" class="deactivate">deactivate</a>
-    <a href="#" class="deactivate">deactivate</a>
-    </nav>
-    <h1 class="titleInside">Project Specifics</h1>
-    <div class="container">
-    	<div class="container-inside">
-        <img src="res/img/folder.png" alt="Project Specifics" />
-        <div class="about-this">
-    	<p class="vers">Version 1.1</p>
-        <p><strong>New Version Featured</strong></p>
-        <p>Replace some image elements with CSS3, Dock, hide and show window, fix and optimize the code</p>
-		<p><strong>Modern Browser Supported</strong></p>
-    	<p>Firefox, Safari and Chrome</p>
-        <p><strong>HTML 5 and CSS3</strong></p>
-    	<p>Intensive use of the CSS3 Keyframes Animations and :target pseudo-class and for GUI</p>
-        <p><strong>Javascript</strong></p>
-        <p>Clock, Fake Login and add special classes after login to remove animations and fix the desktop, hide and show window and and added classes for the dock</p>
-        <p><strong>Draggable Window</strong></p>
-        <p>Use a jQuery UI Draggable plugin</p>
-        <p><strong>Images</strong></p>
-        <p>Use images for logos, user-avatar, spinner loading, cursors, background images, icons</p>
-        </div>
-        </div>
-    </div>
-</div>
 
 
-
-<!-- DOCK -->
 <div class="dock">
 	<ul>
     	<li id="finderr">
         	<a href="#warning" data-rel="showOp">
             	<em><span>Finder</span></em>
-                <img src="res/img/FinderIcon.png" alt="Finder"/>
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/finder-icon.png" alt="finder">
             </a>
         </li>
         <li id="launchPad">
         	<a href="#warning" data-rel="showOp">
-            	<em><span>Launchpad</span></em>
-                <img src="res/img/launchPad.png" alt="Launchpad"/>
+            	<em><span>Messages</span></em>
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/messages-icon.png" alt="messages">
             </a>
         </li>
-        <li id="expose">
-        	<a href="#warning" data-rel="showOp">
-            	<em><span>Mission Control</span></em>
-                <img src="res/img/expose.png" alt="Mission Control"/>
-            </a>
-        </li>
+        
         <li id="appStore">
         	<a href="#warning" data-rel="showOp">
-            	<em><span>App Store</span></em>
-                <img src="res/img/appstore.png" alt="App Store"/>
+            	<em><span>Calendar</span></em>
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/calendar-icon.png" alt="Calendar">
             </a>
         </li>
         <li id="safari">
         	<a href="#warning" data-rel="showOp">
             	<em><span>Safari</span></em>
-                <img src="res/img/Safari.png" alt="Safari"/>
-            </a>
+<img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/safari-icon.png" alt="Safari">            </a>
         </li>
-        <li id="iChat">
+
+         <li id="safari">
         	<a href="#warning" data-rel="showOp">
-            	<em><span>iChat</span></em>
-                <img src="res/img/ichat.png" alt="iChat"/>
-            </a>
+            	<em><span>Chrome</span></em>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_(2011).png" alt="Chrome">
         </li>
         <li id="facetime">
-        	<a href="#warning" data-rel="showOp">
-            	<em><span>FaceTime</span></em>
-                <img src="res/img/facetime.png" alt="Facetime"/>
+        	<a href="#youtube" data-rel="showOp">
+            	<em><span>Notes</span></em>
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/notes-icon.png" alt="Notes">
+                
             </a>
         </li>
-        <li id="addressBook">
-        	<a href="#warning" data-rel="showOp">
-            	<em><span>Address Book</span></em>
-                <img src="res/img/address.png" alt="Address Book"/>
-            </a>
-        </li>
+        
         <li id="preview">
         	<a href="#warning" data-rel="showOp">
             	<em><span>Preview</span></em>
@@ -510,13 +442,13 @@
         <li id="iTunes">
         	<a href="#warning" data-rel="showOp">
             	<em><span>iTunes</span></em>
-                <img src="res/img/iTunes.png" alt="iTunes"/>
+      <img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/itunes_5122x.png" alt="itunes">
             </a>
         </li>
         <li id="preferences">
         	<a href="#warning" data-rel="showOp">
             	<em><span>System Preferences</span></em>
-                <img src="res/img/preferences.png" alt="System Preferences"/>
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/system-preferences-icon.png" alt="system preferences">
             </a>
         </li>
         <li id="trash">
@@ -530,6 +462,71 @@
 
 </div>
 
+        
+
+
+        <!-- DOCK --
+
+<div class="dock">
+  <div class="icons">
+    <div class="finder">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/finder-icon.png" alt="finder">
+      <span class="tooltiptext">Finder</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/safari-icon.png" alt="Safari">
+      <span class="tooltiptext">Safari</span>
+    </div>
+    <div class="icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_(2011).png" alt="Chrome">
+      <span class="tooltiptext">Chrome</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/notes-icon.png" alt="Notes">
+      <span class="tooltiptext">Notes</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/calendar-icon.png" alt="Calendar">
+      <span class="tooltiptext">Calendar</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/reminders-icon.png" alt="reminders">
+      <span class="tooltiptext">Reminders</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/facetime-icon.png" alt="facetime" title="" style="">
+      <span class="tooltiptext">FaceTime</span>
+    </div>
+    <div class="icon">
+      <img src="http://www.myiconfinder.com/uploads/iconsets/21cabddae0ef1e593f7d11a4262a3ec9-appstore.png" alt="App Store" title="" style="">
+      <span class="tooltiptext">App Store</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/contacts-icon.png" alt="contacts">
+      <span class="tooltiptext">Contacts</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/mail-icon.png" alt="mail">
+      <span class="tooltiptext">Mail</span>
+    </div>
+    <div class="icon">
+      <img src="http://cdn.osxdaily.com/wp-content/uploads/2013/11/maps-icon-os-x-300x300.png" alt="maps">
+      <span class="tooltiptext">Maps</span>
+    </div>
+    <div class="icon">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/messages-icon.png" alt="messages">
+      <span class="tooltiptext">Messages</span>
+    </div>
+    <div class="icon">
+      <img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/itunes_5122x.png" alt="itunes">
+      <span class="tooltiptext">iTunes</span>
+    </div>
+    <div class="icon settings">
+      <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/system-preferences-icon.png" alt="system preferences">
+      <span class="tooltiptext">Settings</span>
+    </div>
+  </div>
+</div>
 
 
 
