@@ -76,19 +76,12 @@
         	<a href="#all">Apple</a>
             <ul class="sublist">
             <li><a href="#about-this-mac" data-rel="show">About This Mac</a></li>
-            <li>Software Updates...</li>
-            <li>App Store...</li>
             <li class="divider"></li>
             <li>System Preferences...</li>
             <li>Dock
             	<span class="arrow"></span>
                 <ul class="sublist-menu">
                 <li>Turn Hiding Off</li>
-                <li>Turn Magnification Off</li>
-                <li class="divider"></li>
-                <li>Position on Left</li>
-                <li>Position on Bottom</li>
-                <li>Position on Right</li>
                 <li class="divider"></li>
                 <li>Dock Preferences...</li>
                 </ul>
@@ -142,10 +135,8 @@
         	<a href="#all">File</a>
             <ul class="sublist">
             <li>New Finder Window</li>
-            <li>New Folder</li>
             <li class="disable">New Folder with Selection</li>
             <li>New Smart Folder</li>
-            <li>New Burn Folder</li>
             <li class="disable">Open</li>
             <li class="disable">Open With
             	<span class="arrow"></span>
@@ -158,10 +149,6 @@
             <li class="disable">Compress</li>
             <li class="divider"></li>
             <li class="disable">Duplicate</li>
-            <li class="disable">Make Alias</li>
-            <li class="disable">Quick Look</li>
-            <li class="disable">Show Original</li>
-            <li class="disable">Add to Sidebar</li>
             <li class="divider"></li>
             <li class="disable">Move to Trash</li>
             <li class="disable">Eject</li>
@@ -184,8 +171,6 @@
             <li>Select All</li>
             <li class="divider"></li>
             <li>Show Clipboard</li>
-            <li class="divider"></li>
-            <li>Special Characters...</li>
             </ul>
         </li>
         <li>
@@ -193,8 +178,6 @@
         	<ul class="sublist">
             <li class="disable">as Icons</li>
             <li class="disable">as List</li>
-            <li class="disable">as Columns</li>
-            <li class="disable">as Cover Flow</li>
             <li class="divider"></li>
             <li>Clean Up</li>
             <li>Clean Up By

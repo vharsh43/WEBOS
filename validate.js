@@ -146,10 +146,7 @@ function SignUpForm(event){
 	
      if (result == true)
      {	
-         /*
-       document.getElementById("display_info").innerHTML="Email: " +l+"<br>"+"Username: "+m+"<br>"+"Gender: "+a+"<br>"+ "Password: " +n+"<br>"
-                                                                   +"Confirm Password: "+o+"<br>";	
-        */
+         
 
       	
      }

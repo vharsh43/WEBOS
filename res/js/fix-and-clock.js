@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-//-----------------------------------------------------------------------------------
-//	1.	Fix Classes after Validate Login
-//-----------------------------------------------------------------------------------
-
 $('input[type=password]').addClass('valid');
 $('.tooltip-pass').hide();
 $('.submit').removeClass('submit').addClass('charge');
@@ -13,20 +9,17 @@ $('.window').delay(3000).queue(function() { $(this).addClass('windows-vis'); $(t
 event.preventDefault();
 
 
-//-----------------------------------------------------------------------------------
-//	2.	Draggable Windows
-//-----------------------------------------------------------------------------------
 
-$('.content').remove();
+$('.content').remove();    //	2.	Draggable Windows
+
 
 var a = 3;
 $('.content,.specific,.project,.share').draggable({ handle: '.title-inside', start: function(event, ui) { $(this).css("z-index", a++); }});
 $(".window").draggable({ handle: '.titleInside, .title-mac, .tab', refreshPositions: true, containment: 'window', start: function(event, ui) { $(this).css("z-index", a++); } });
 
 
-//-----------------------------------------------------------------------------------
-//	3.	Clock
-//-----------------------------------------------------------------------------------
+
+//	Clock
 
 var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
 var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -54,20 +47,12 @@ setInterval( function() {
   
 
 
-//-----------------------------------------------------------------------------------
-//	4.	Hide and Close
-//-----------------------------------------------------------------------------------
-
-
+//   Hide and Close
 
 var left = 50 + '%';
 var top = 15 + '%';
 var item = $('<div class="fresh"></div>').hide();
 var itemR = $('<div class="fresh"></div>').hide();
-
-
-
-
 
 
 
