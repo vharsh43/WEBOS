@@ -10,6 +10,8 @@ Sahilkumar Gopani (200399658)
 
 Topic - Cloud (WEB) Operation System.
 
+http://www2.cs.uregina.ca/~hbv559/cs330/login.php
+
 Description - These is an operating system where you get a benefit to access from anywhere without the need of a network connection to a 
 remote PC. If there is a private company and they want to use our operating system then it should be connect with the internally hosted 
 private domain where all the user of that comapny can access their required application then it will be well secure, faster and 
